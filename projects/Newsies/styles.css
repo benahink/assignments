@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    font: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: lightgray;
+    height: 1000px;
+    width: 400px;
+    border: 5px black solid;
+    display: inline-block;
+}
+
