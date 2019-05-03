@@ -8,15 +8,15 @@
         {"name": "Turkey Avocado", "ingredients": "turkey, avocado, italian bread, tomatoes, onions, spinach, mayo, oil", "description": "Cold Sandwich"}
     ], 
     "hot sandwiches": [{"name": "Beef Shwarma Sandwich", "ingredients": "", "description": "Marinated beef in a mixture of spices and vinegar grilled to perfection and served with a variety of salsa garnishes."}, 
-        "Chicken Shwarma Sandwich"{"name": "Samosa", "ingredients": "", "description": "Marinated chicken in a mixture of spices and vinegar grilled to perfection served with a variety of salsa garnishes."}, 
-        "Falafel Sandwich"{"name": "Samosa", "ingredients": "", "description": "Rounds of finely ground garbanzo beans spiced with parsley, cilantro and onions,lightly fried to a crunch and served with a variety of salsa garnishes."}, 
-        "Kifteh Sandwich"{"name": "Samosa", "ingredients": "", "description": "Minced beef mixed with parsley and onions, spiced with a mixture of Mediterranean spices, grilled to perfection and served with a variety of salsa garnishes."}],
-    "dessert": ["Pistachio ice-cream"{"name": "Samosa", "ingredients": "", "description": ""}, 
-        "Mango ice-cream"{"name": "Samosa", "ingredients": "", "description": ""}, 
-        "Halva"{"name": "Samosa", "ingredients": "", "description": ""}, 
-        "Baklva"{"name": "Samosa", "ingredients": "", "description": ""}],
-    "drinks": ["Soda"{"name": "Samosa", "ingredients": "", "description": ""}, 
-        "Water"{"name": "Samosa", "ingredients": "", "description": ""}, 
-        "Mango lassi"{"name": "Samosa", "ingredients": "", "description": ""}, 
-        "Specialty Drinks"{"name": "Samosa", "ingredients": "", "description": ""}]
+        {"name": "Chicken Shwarma Sandwich", "ingredients": "", "description": "Marinated chicken in a mixture of spices and vinegar grilled to perfection served with a variety of salsa garnishes."}, 
+        {"name": "Falafel Sandwich", "ingredients": "", "description": "Rounds of finely ground garbanzo beans spiced with parsley, cilantro and onions,lightly fried to a crunch and served with a variety of salsa garnishes."}, 
+        {"name": "Kifteh Sandwich", "ingredients": "", "description": "Minced beef mixed with parsley and onions, spiced with a mixture of Mediterranean spices, grilled to perfection and served with a variety of salsa garnishes."}],
+    "dessert": [{"name": "Pistachio ice-cream", "ingredients": "pistachio, milk", "description": "ice-cream"}, 
+        {"name": "Mango ice-cream", "ingredients": "mango, milk", "description": "ice-cream"}, 
+        {"name": "Halva", "ingredients": "", "description": ""}, 
+        {"name": "Baklva", "ingredients": "", "description": ""}],
+    "drinks": [{"name": "Soda", "ingredients": "", "description": "beverage"}, 
+        {"name": "Water", "ingredients": "", "description": "h2o"}, 
+        {"name": "Mango lassi", "ingredients": "", "description": ""}, 
+        {"name": "Specialty Drinks", "ingredients": "", "description": "a choice of imported beverages"}]
 }
