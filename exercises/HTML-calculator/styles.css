@@ -1,0 +1,17 @@
+#addition {
+    background: #1E9EB9;
+    margin: 25px;
+    text-align: center;
+}
+
+#subtraction {
+    background: #FEDDA3;
+    text-align: center;
+    margin: 25px;
+}
+
+#multiplication {
+    background: #59C2CF;
+    text-align: center;
+    margin: 25px;
+}

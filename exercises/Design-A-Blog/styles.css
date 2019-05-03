@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    font-size: 0;
+    box-sizing: border-box;
+}
+
+
+.box {
+    height: 200px;
+    border: 2px solid darkgray;
+}
+
+.navbar {
+    position: relative;
+    height: 55px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: gray;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+li {
+    font-size: 20px;
+    display: inline;
+    float: left;
+    color: white;
+    padding: 15px;
+    border-right: 1px white solid;
+}
+
+li:hover {
+    background: rgb(35, 145, 81);
+}

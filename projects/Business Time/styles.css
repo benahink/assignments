@@ -1,0 +1,219 @@
+.box {
+    height: 200px;
+    border: 2px solid darkgray;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #35455D;
+}
+
+/* header */
+
+.header {
+    background-color: #F1F1F1;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #F1F1F1;
+    text-decoration: none;
+}
+
+.box-link{
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #F1F1F1;
+    text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #92B1B6;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+@media (min-width: 768px) {
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+.two, .three, .four, .five, .six, .seven {
+    background: #ECDDD0;
+    width: 100%;
+    font-size: 40px;
+    color: #35455D;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+}
+
+.two{
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/042219-spring-dresses-1-1556033564.png?crop=1.00xw:1.00xh;0,0&resize=640:*");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: absolute;
+    background-position: center;
+    opacity: 0.7;
+}
+
+
+.three {
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/salem-indrias-wearing-a-red-dress-with-floral-print-from-news-photo-598024360-1548896176.jpg?crop=0.707xw:0.531xh;0.112xw,0.0264xh&resize=640:*");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: absolute;
+    background-position: center;
+    opacity: 0.7;
+    color: #BFD1DF;
+}
+
+.four {
+    background-image: url("http://www.joycann5.org.uk/images/cate_21/640/Girl-Denim-Blouse-2019-Spring-Kids-Cotton-Shirts-B-Kids-Long-sleeve-Shirts-Children-Clothes-Highgrade-Little-Girls-Clothing-Blouses-Shirts-cia0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: absolute;
+    background-position: center;
+    opacity: 0.7;
+}
+
+.five {
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2018-12-24-at-9-30-28-am-1545662240.png?crop=1.00xw:0.651xh;0,0.106xh&resize=640:*");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: absolute;
+    background-position: center;
+    opacity: 0.7;
+    color: #BFD1DF;
+}
+
+.six {
+    background-image: url("https://www.easijar.com/image/cache/catalog/shopfw/2018/12/27/main/10185862488_1561069572-800x800.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: absolute;
+    background-position: center;
+    opacity: 0.7;
+}
+
+.seven {
+    background-image: url("https://as1.ftcdn.net/jpg/01/37/87/22/500_F_137872289_dziveCpMccWrbTrSueqP4GMv9jBXsDGM.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: absolute;
+    background-position: center;
+    opacity: 0.7;
+}
+
+

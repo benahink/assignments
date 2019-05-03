@@ -1,0 +1,22 @@
+{
+    "appetizers": [{"name": "Falafel", "ingredients": "garbanzo beans, parsley, cilantro, onions", "description": "Fried rounds of finely ground garbanzo beans spiced with parsley, cilantro and onion."}, 
+        {"name": "Samosa", "ingredients": "", "description": ""}, 
+        {"name": "Humus", "ingredients": "garbanzo beans, tahini, lemon, garlic", "description": "Puréed garbanzo beans in tahini paste with lemon and a hint of garlic."}, 
+        {"name": "Yogurt Cucumber Mint salsa", "ingredients": "yogurt, cucumbers, mint", "description": "Yogurt Cucumber Mint Salsa: A signature Mediterranean salsa served as a rice topping or dip."}], 
+    "cold sandwiches": [{"name": "Vegetarian", "ingredients": "italian bread, leaf lettuce, fried eggplant, tomatos, cucumbers, fetta cheese, red wine vinegar, oil", "description": "Cold Sandwich"}, 
+        {"name": "Classic Italian", "ingredients": "italian bread, pepperoni, tot dry capocollo, salami, provolone tomatoes, red onions,mayo, oil", "description": "Cold Sandwich"}, 
+        {"name": "Turkey Avocado", "ingredients": "turkey, avocado, italian bread, tomatoes, onions, spinach, mayo, oil", "description": "Cold Sandwich"}
+    ], 
+    "hot sandwiches": [{"name": "Beef Shwarma Sandwich", "ingredients": "", "description": "Marinated beef in a mixture of spices and vinegar grilled to perfection and served with a variety of salsa garnishes."}, 
+        "Chicken Shwarma Sandwich"{"name": "Samosa", "ingredients": "", "description": "Marinated chicken in a mixture of spices and vinegar grilled to perfection served with a variety of salsa garnishes."}, 
+        "Falafel Sandwich"{"name": "Samosa", "ingredients": "", "description": "Rounds of finely ground garbanzo beans spiced with parsley, cilantro and onions,lightly fried to a crunch and served with a variety of salsa garnishes."}, 
+        "Kifteh Sandwich"{"name": "Samosa", "ingredients": "", "description": "Minced beef mixed with parsley and onions, spiced with a mixture of Mediterranean spices, grilled to perfection and served with a variety of salsa garnishes."}],
+    "dessert": ["Pistachio ice-cream"{"name": "Samosa", "ingredients": "", "description": ""}, 
+        "Mango ice-cream"{"name": "Samosa", "ingredients": "", "description": ""}, 
+        "Halva"{"name": "Samosa", "ingredients": "", "description": ""}, 
+        "Baklva"{"name": "Samosa", "ingredients": "", "description": ""}],
+    "drinks": ["Soda"{"name": "Samosa", "ingredients": "", "description": ""}, 
+        "Water"{"name": "Samosa", "ingredients": "", "description": ""}, 
+        "Mango lassi"{"name": "Samosa", "ingredients": "", "description": ""}, 
+        "Specialty Drinks"{"name": "Samosa", "ingredients": "", "description": ""}]
+}

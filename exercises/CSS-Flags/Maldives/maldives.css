@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    font: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 24%;
+    left: 16%;
+    height: 385px;
+    width: 580px;
+    border: 1px lightblue solid;
+}
+
+.red {
+    background: #D21034;
+    height: 100%;
+    width: 100%;
+}
+
+.green {
+    background: #007E3A;
+    height: 190px;
+    width: 390px;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+}
+
+#circle1 {
+    position: absolute;
+    left: 35%;
+    top: 11%;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 50%;
+  }
+
+  #circle2 {
+    position: absolute;
+    left: 42%;
+    top: 11%;
+    width: 150px;
+    height: 150px;
+    background: #007E3A;
+    border-radius: 50%;
+  }

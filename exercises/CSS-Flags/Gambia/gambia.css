@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    font: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 24%;
+    left: 16%;
+    height: 386px;
+    width: 580px;
+}
+
+.box {
+    height: 386px;
+    width: 580px;
+    border: 1px solid lightblue;
+}
+
+.red {    
+    background: red;
+    height: 33%;
+}
+
+.blue {
+    background: darkblue;
+    height: 32%;
+    border-bottom: 20px solid white;
+    border-top: 20px solid white;
+}
+
+.green {
+    background: green;
+    height: 33%;
+}

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    font: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 24%;
+    left: 16%;
+    height: 386px;
+    width: 580px;
+}
+
+.box {
+    height: 386px;
+    width: 580px;
+    border: 1px lightblue solid;
+    display: inline-block;
+}
+
+.white {    
+    background: white;
+    width: 33%;
+}
+
+.red, .green {
+    display: block;
+    width: 63%;
+    height: 49%;
+    float: right;
+    border: 0;
+}
+
+.red {
+    background: #FC3D32;
+    height: 50%;
+    position: relative;
+    right: 4%
+}
+
+.green {
+    background: green;
+    height: 50%;
+    position: relative;
+    bottom: 51%;
+    right: 4%
+}

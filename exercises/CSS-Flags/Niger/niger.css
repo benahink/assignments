@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    font: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 24%;
+    left: 16%;
+    height: 500px;
+    width: 580px;
+    border: 1px lightblue solid;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+}
+
+.orange {    
+    background: #E05206;
+    height: 33%;
+}
+
+.white {
+  
+    background: white;
+    height: 32%;
+}
+
+.green {
+    background: #0DB02B;
+    height: 33%;
+}
+
+#circle {
+    width: 130px;
+    height: 130px;
+    background: #E05206;
+    border-radius: 50%;
+    position: absolute;
+    top: 180px;
+    left: 225px;
+}

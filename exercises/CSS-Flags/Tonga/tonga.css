@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    font: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #C10000;
+    height: 395px;
+    width: 580px;
+    position: fixed;
+    top: 8%;
+    left: 20%;
+}
+
+.box {
+    height: 45%;
+    width: 45%;
+    background: white;
+    border: 1px solid lightblue;
+}
+
+.red1 {
+    background: #C10000;
+    height: 120px;
+    width: 40px;
+    position: relative;
+    top: 30px;
+    left: 40%;
+}
+
+.red2 {
+    background: #C10000;
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    top: 18%;
+    left: 11%;
+}

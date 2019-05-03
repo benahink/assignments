@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    font-size: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    height: 130px;
+
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border: 5px solid white;
+}
+
+.one {
+    background: #F5C6D6;
+}
+
+.two, .three, .four, .five {
+    background: #EE2E84;
+    width: 25%;
+}
+
+.six, .seven {
+    background: #85CFD8; 
+    width: 50%;
+}
+
+.eight {
+    background: #8DC63F;
+    width: 75%;
+}
+
+.nine {
+    background: #E76E34;
+    width: 25%;
+}
+
+@media (max-width: 768px) {
+    .box {
+        display: block;
+        width: 100%;
+        border: 1px solid white;
+    }
+}
