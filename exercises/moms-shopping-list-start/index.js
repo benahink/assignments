@@ -18,8 +18,12 @@ document.getElementById('add-todo').addEventListener('submit', function(e){
     li.appendChild(xButton)
 })
 
-const items = [...document.getElementsByClassName('item')]
-
+document.getElementById('list').addEventListener('click', function (e) {
+    e.preventDefault()
+    let deleteItem = document.getElementById('button')
+    console.log(deleteItem)
+    deleteItem.remove()
+})
 
 
 

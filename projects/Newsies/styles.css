@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 .container {
     height: 1000px;
     width: 1200px;
@@ -75,3 +76,13 @@ h4 {
 
 
 
+=======
+.box {
+    background-color: lightgray;
+    height: 1000px;
+    width: 400px;
+    border: 5px black solid;
+    display: inline-block;
+}
+
+>>>>>>> 031c77f32a87254985f2b382d886a2464e906e50

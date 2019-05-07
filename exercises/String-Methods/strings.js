@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let stringOne = 'Hello world!'
 let stringTwo = 'Hello'
 let strArray = []
@@ -35,3 +36,9 @@ function halfCaps(str) {
 }
 console.log(halfCaps())
 
+=======
+// function caps(str) {
+//     return str.toUpperCase() + str.toLowerCase()
+// }
+// console.log(caps("Hello"))
+>>>>>>> 031c77f32a87254985f2b382d886a2464e906e50
