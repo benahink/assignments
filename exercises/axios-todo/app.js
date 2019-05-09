@@ -1,4 +1,5 @@
 let form = document.addToDo
+
 axios.get("https://api.vschool.io/beni_kur/todo/").then((response) => {    
 todoList(response.data)
 })
@@ -9,21 +10,37 @@ function todoList(todos) {
         let myTitle = document.createElement('h2');
         let myParagraph = document.createElement('p')
         let myImg = document.createElement('IMG')
-
+        let deleteBtn = document.createElement('button')
+        let checkBox = document.createElement('input')
+        
         myTitle.innerText = todo.title
         myParagraph.innerText = todo.description
-        myImg.src = todo.imgUrl
-        myImg.setAttribute('width', 'auto')
-        myImg.setAttribute('height', '200px')
-        console.log(myImg)
+        deleteBtn.innerText = "Delete"
+        newDiv.className = "todoBox"
+        
+        myImg.setAttribute("src", todo.imgUrl)
+        myImg.setAttribute('width', '200px')
+        checkBox.setAttribute('type', 'checkbox')
+
         if (todo.completed) {
             myTitle.style.textDecoration = 'line-through'
             myParagraph.style.textDecoration = 'line-through'
+        } else {
+            myTitle.style.textDecoration = 'none'
+            myParagraph.style.textDecoration = 'none'
         }
+
+        deleteBtn.addEventListener('click', function () {
+            newDiv.style.display = 'none'
+            axios.delete(`https://api.vschool.io/beni_kur/todo/${todo._id}`)
+        })
+
 
         newDiv.appendChild(myTitle)
         newDiv.appendChild(myParagraph)
         newDiv.appendChild(myImg)
+        newDiv.appendChild(checkBox)
+        newDiv.appendChild(deleteBtn)
         document.getElementById('container').appendChild(newDiv)
     })
 }
@@ -50,6 +67,3 @@ form.addEventListener('submit', e => {
     }
     newTodos(myObj)
 })
-
-
-// https://i.ytimg.com/vi/tst7V_Ffn7Q/maxresdefault.jpg
