@@ -1,3 +1,5 @@
+// Replace all the vars with let and const. Alter the code however necessary to make sure this continues to work (so the pet's name isn't "John").
+// John is the pet owner, and his name should be stored differently than the other names.
 let ownerName = "John"
 let age = 101
 const pets = ["cat", "dog"]
@@ -19,8 +21,10 @@ function runForLoop() {
 }
 console.log(runForLoop())
 
-// -------------Q1
-
+//Q1
+// Re-write this .map() using an arrow function:
+// Be aware that if JavaScript sees a { directly after the => it will think it's starting a function, 
+// and not starting an object, so the : will be an unexpected symbol.
 const carrots = ["bright orange", "ripe", "rotten"]
 
 
@@ -32,8 +36,8 @@ function mapVegetables(arr) {
 )}
 console.log(mapVegetables(carrots))
 
-// -------------Q2
-
+//Q2
+// Re-write this .filter() using an arrow function:
 const people = [
     {
         name: "Princess Peach",
@@ -60,8 +64,8 @@ function filterForFriendly(arr) {
 }
 console.log(filterForFriendly(people))
 
-// -------------Q3
-
+//Q3
+// Re-write the following functions to be arrow functions:
 const doMathSum = (a, b) => {
     return a + b
 }
@@ -74,8 +78,9 @@ const produceProduct = (a, b) => {
 
 console.log(produceProduct(4, 5))
 
-// -------------Q4
-
+//Q4
+// Write a printString function that takes firstName, lastName, 
+// and age as parameters and returns a string like the following:
 
 let printString = (firstName, lastName, age) => {
     return `Hi ${firstName} ${lastName}, how does it feel to be ${age}?`
@@ -83,8 +88,9 @@ let printString = (firstName, lastName, age) => {
 console.log(printString("Jane", "Doe", 40))
 
 
-// -------------Q5
-
+//Q5
+// Use the shorthand syntax to make the following filter take up one line. 
+// Copy and paste the array to test it.
 function filterForDogs(arr) {
     return arr.filter(animal => {
       const filtered = animal.type === "dog" ? true : false
@@ -110,7 +116,8 @@ console.log(filterForDogs([
     }
 ]))
 
-// -------------Q6
+//Q6
+// Using template literals, write a function that takes location and name parameters and outputs a message formatted like this:
 
 const welcomeFunction = (name, location) => {
      return `Hi ${name}!
