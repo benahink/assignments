@@ -1,3 +1,4 @@
+// ****Green dot ski slope****
 // Q1
 const collectAnimals = (...arr) => {
     return arr;
@@ -48,3 +49,14 @@ const returnFavorites = (arr) => {
     return `My top three favorite activities are ${firstFav}, ${secondFav} and ${thirdFav}.`
 }
 console.log(returnFavorites(favoriteActivities));
+
+// ****Blue square ski slope****
+// Q1
+const combineArrays = (arr1, arr2, arr3) => {
+    const combine = [...arr1, ...arr2, ...arr3]
+    return combine
+}
+const realAnimals = ["dog", "cat", "mouse"];
+const magicalAnimals = ["jackolope"];
+const mysteriousAnimals = ["platypus"];
+console.log(combineArrays(realAnimals, magicalAnimals, mysteriousAnimals));
