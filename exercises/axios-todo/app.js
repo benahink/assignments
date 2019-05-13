@@ -4,7 +4,10 @@ axios.get("https://api.vschool.io/beni_kur/todo/").then((response) => {
 todoList(response.data)
 })
 
-function todoList(todos) {
+function todoList(todos, updated) {
+    if(updated) {
+        document.getElementById('container').innerHTML = ''
+    }
     todos.forEach((todo) => {
         let newDiv = document.createElement('div');
         let myTitle = document.createElement('h2');
@@ -22,19 +25,28 @@ function todoList(todos) {
         myImg.setAttribute('width', '200px')
         checkBox.setAttribute('type', 'checkbox')
 
-        if (todo.completed) {
-            myTitle.style.textDecoration = 'line-through'
-            myParagraph.style.textDecoration = 'line-through'
-        } else {
-            myTitle.style.textDecoration = 'none'
-            myParagraph.style.textDecoration = 'none'
-        }
-
         deleteBtn.addEventListener('click', function () {
             newDiv.style.display = 'none'
             axios.delete(`https://api.vschool.io/beni_kur/todo/${todo._id}`)
         })
 
+        checkBox.addEventListener('click', function () {
+            axios.put(`https://api.vschool.io/beni_kur/todo/${todo._id}`, {completed: !todo.completed}).then((response) => {
+                todoList(response.data)
+            })
+            
+            const newTodos = todos.map(oldTodo => {
+            oldTodo._id === todo._id ? response.data: todo})
+            todoList([newTodos, true])
+        })
+        
+        if(todo.completed) {
+            myTitle.style.textDecoration = 'line-through'
+            myParagraph.style.textDecoration = 'line-through' 
+        } else {
+            myTitle.style.textDecoration = 'none'
+            myParagraph.style.textDecoration = 'none'
+        }
 
         newDiv.appendChild(myTitle)
         newDiv.appendChild(myParagraph)
