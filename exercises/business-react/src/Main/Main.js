@@ -1,8 +1,12 @@
 import React from 'react'
+import './styles.css'
 
 const Main = ()=> {
+    
     return (
-        <div>About</div>
+        <div className="main-container">
+        Stuff Here
+        </div>
     )
 } 
 
