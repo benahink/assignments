@@ -1,0 +1,10 @@
+div {
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 5px green;
+    border: 3px solid green;
+}
+
+.container {
+    border: 1px solid black;
+}
