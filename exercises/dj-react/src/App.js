@@ -10,37 +10,40 @@ class App extends React.Component {
         }
 
     }
-
     
     blackSquares = () => {
-        this.setState(prevState => {
-            for (let i = 0; i < 4; i++) {
-                if(this.state.squares[i] === 'white') {
-                    return {
-                        squares: ['black', 'black', 'black', 'black']
-                    }
-                } else {
-                    return {
-                        squares: ['white', 'white', 'white', 'white']
-                    }
-                }
-            }
+       this.setState(prevState => {
+           const newSquares = prevState.squares.map((square) => {
+               return square === 'white' ? square = 'black': square = 'black' ? square = 'white' : square;
+           })
+           return {squares: newSquares}
         })
     }
 
     purpleSquares = () => {
+       this.setState(prevState => {
+           const newSquares = prevState.squares.map((square, i) => {
+               return i === 0 || i === 1 ? square = 'purple' : square;
+           })
+           return {squares: newSquares}
+       })
+    }
+
+    blueSquaresR = () => {
         this.setState(prevState => {
-            for (let i = 0; i < 4; i++) {
-                if(this.state.squares[i] !== 'purple') {
-                    return {
-                        squares: ['purple', 'purple', 'white', 'white']
-                    }
-                } else {
-                    return {
-                        squares: ['white', 'white', 'white', 'white']
-                    }
-                }
-            }
+            const newSquares = prevState.squares.map((square, i) => {
+                return i === 2 ? square = 'blue' : square;
+            })
+            return {squares: newSquares}
+        })
+    }
+
+    blueSquaresL = () => {
+        this.setState(prevState => {
+            const newSquares = prevState.squares.map((square, i) => {
+                return i === 3 ? square = 'blue' : square;
+            })
+            return {squares: newSquares}
         })
     }
     
@@ -53,8 +56,8 @@ class App extends React.Component {
                 {mapped}
                 <button onClick={this.blackSquares} id='small-time' type='button'>Black or White</button>
                 <button onClick={this.purpleSquares} id='party-dj' type='button'>Purple</button>
-                <button id='pro-dj' type='button'>Left Blue</button>
-                <button id='pro-dj' type='button'>Right Blue</button>
+                <button onClick={this.blueSquaresR} id='pro-dj' type='button'>Left Blue</button>
+                <button onClick={this.blueSquaresL} id='pro-dj' type='button'>Right Blue</button>
             </div>
         )
     }
