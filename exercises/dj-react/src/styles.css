@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.parent-component {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    grid-gap: 5px;
+    height: 50vh;
+} 
+
+.boxes {
+    border: 1px black solid;
+}
