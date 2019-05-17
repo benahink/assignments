@@ -30,6 +30,7 @@ body {
     line-height: 30px;
     color: #fff;
     border-top: 10px #325050 solid;
+    /* grid-area: header; */
 }
 
 
@@ -41,16 +42,16 @@ body {
 #navigation {
     position: absolute;
     top: 185px;
-    background: rgba(138,188,159,0.5);
+    background: #ffffff;
     height: 65px;
     width: 100%;
-    /* opacity: 0.3; */
     text-align: center;
     text-transform: uppercase;
     font-family:  "Julius Sans One", sans-serif;
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    opacity: 0.2;
 }
 
 #arrow-view {
@@ -111,8 +112,7 @@ body {
     font-style: normal;
 }
 
-
-#socialMedia {
+#social-media {
     background: #134347;
     height: 100px;
 }
@@ -176,7 +176,7 @@ a {
     height: auto;
 }
 
-.links {
+.lists {
     list-style: none;
     display: grid;
     grid-template-areas: 
@@ -210,4 +210,89 @@ h3 {
 
 h4 {
     font-style: italic;
+}
+
+@media screen and (min-width: 1130px) {
+    body {
+        grid-template:
+        "header header" 24vh
+        "about credits" 45vh
+        "part credits" 25vh
+        "req links" 45vh
+        "design design" 0vh
+        "social social" 0vh
+        / 65% 35%;
+    }
+
+    #navigation {
+        width: 35%;
+        height: 245px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .header{
+        grid-area: header; 
+    }
+    #navigation {
+        grid-area: nav;
+    }
+    #about {
+        grid-area: about;  
+    }
+    #participation {
+        grid-area: part; 
+    }
+    
+    #requirements {
+        grid-area: req; 
+    }
+    
+    .design-by{
+        grid-area: design; 
+    }
+    
+    #social-media {
+        grid-area: social; 
+    }
+    
+    .credits {
+        grid-area: credits;
+    }
+    
+    .links-container {
+        grid-area: links; 
+    }
+
+    .credits {
+        display: flex;
+        flex-direction: row;
+    }
+
+    p, h3 {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .list{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: rgb(192, 202, 195); 
+    }
+    .list-items {
+        border-bottom: #607476 1px solid;
+        font-size: 14px;
+    }
+    .lists {
+        display: flex;
+        flex-direction: column;
+    }
+    .lists > li{
+        height: 50px;
+        width: 100%;
+        border-bottom: #607476 1px solid;
+    }
 }
