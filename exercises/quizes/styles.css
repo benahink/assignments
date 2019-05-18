@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+div {
+    background: gray;
+    border: 5px white solid;
+}

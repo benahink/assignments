@@ -20,3 +20,8 @@ body {
 .squares {
     border: 1px black solid;
 }
+
+button {
+    font-size: 25px;
+    width: 75%;
+}

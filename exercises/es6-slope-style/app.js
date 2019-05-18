@@ -75,3 +75,16 @@ console.log(combineArrays(realAnimals, magicalAnimals, mysteriousAnimals));
 // Q1
 // Try to make the following function more ES6xy:
 
+const product = (a, b, c, d, e) => {
+    const numbers = [...a, ...b, ...c, ...d, ...e]
+
+    return numbers.reduce(function (accumulator, num) {
+        return accumulator * num
+    }, 1)
+}
+const a = [0,1]
+const b = [2, 3]
+const c = [4, 5]
+const d = [6, 7]
+const e = [8, 9]
+console.log(product(a, b, c, d, e))

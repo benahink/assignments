@@ -20,6 +20,7 @@ let cardiB = new Enemy('Cardi B', 45, 20, ['superbowl performance', 'commericals
 let justin = new Enemy('Justin Bieber', 45, 20, ['outrageous concerts', 'TV interview'])
 
 const badMusic = [ariana, cardiB, justin]
+
 newMusicList = ['Ariana Grande', 'Cardi B', 'Justin Bieber']
 
 let enemy = badMusic[Math.floor(Math.random()*badMusic.length)]
@@ -107,21 +108,21 @@ function enemyAttack() {
     }
 }
 
+
 function enemyDies(arr) {
     return arr.map((el, i) => {
-        if (el[1] === 0) {
+        if (el[1] <= 0) {
             arr.splice(i, 1)
         }
     })
 }
 
 function gameOver() {
-    if (enemy.influencePoints === 0) {
-        enemyDies()
+    if (enemy.influencePoints <= 0) {
+        enemyDies(badMusic)
     } else if (playerProperties.resistPoints === 0) {
         playerProperties.isAlive = false
-    } else if (badMusic.length === 0) {
-        enemyProperties.isDefeated = true
+        break;
     }
 }
 

@@ -1,9 +1,9 @@
 let readline = require('readline-sync')
 
-let playerName = readline.question("What is your name? ")
+// let playerName = readline.question("What is your name? ")
 
 const playerProperties = {
-    name: playerName, 
+    // name: playerName, 
     resistPoints: 50, 
     hasWon: false, 
     isAlive: true, 
@@ -36,6 +36,7 @@ function Enemy (name, hp, num, arr) {
 
 function enemyAttack() {
     let damageToPlayer = enemy.influencePower
+    console.log(damageToPlayer)
     let low =  damageToPlayer <=3
     let medium = damageToPlayer >= 4 && damageToPlayer <=10
     let high =  damageToPlayer >= 11 && damageToPlayer && damageToPlayer <=20
