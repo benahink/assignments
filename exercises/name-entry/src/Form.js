@@ -1,61 +1,68 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 
 class Form extends Component {
     constructor() {
         super()
 
         this.state = {
-            fName: "",
-            lName: "",
+            firstName: "", 
+            lastName: "", 
+            age: "",
             people: []
         }
     }
 
     inputValue = (event) => {
-         this.setState({
+        this.setState({
             [event.target.name]: event.target.value
         })
     }
 
-    submitForm = (event) => {
+    submission = (event) => {
         event.preventDefault()
 
         const newPerson = {
-            fName: this.state.fName, 
-            lName: this.state.lName
+            firstName: this.state.firstName, 
+            lastName: this.state.lastName, 
+            age: this.state.age
         }
-
+        
         this.setState(prevState => {
             return {
                 people: [...prevState.people, newPerson]
             }
         })
-
     }
     
     render() {
-        const mappedPeople = this.state.people.map(person => {
-            return <h1>{person.fName} {person.lName}</h1>
+        let mappedPeople = this.state.people.map(person => {
+            return <h1>{person.firstName} {person.lastName} {person.age} </h1>
         })
 
-        return (
+        return(
             <>
-                <form onSubmit={this.submitForm}>
+                <form onSubmit={this.submission}>
                     <input  type="text" 
                             placeholder="First Name"
-                            name="fName" 
-                            value= {this.state.fName}
+                            name="firstName"
+                            value={this.state.firstName}
                             onChange={this.inputValue}/>
-                    <input  type="text" 
+                    <input type="text"
                             placeholder="Last Name"
-                            name="lName" 
-                            value= {this.state.lName}
-                            onChange={this.inputValue}/>                
+                            name="lastName"
+                            value={this.state.lastName}
+                            onChange={this.inputValue}/>
+                    <input type="text"
+                            placeholder="Age"
+                            name="age"
+                            value={this.state.age}
+                            onChange={this.inputValue}/>
                     <button>Submit</button>
+                    {mappedPeople}
                 </form>
-                {mappedPeople}
             </>
         )
     }
 }
-export default Form;
+
+export default Form 
