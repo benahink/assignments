@@ -6,7 +6,8 @@ class App extends React.Component {
     constructor() {
         super();
         this.state = {
-            squares: ['white', 'white', 'white', 'white']
+            squares: ['white', 'white', 'white', 'white'],
+            sound: ''
         }
 
     }
@@ -46,18 +47,63 @@ class App extends React.Component {
             return {squares: newSquares}
         })
     }
+
+    pinkSquare = () => {
+        this.setState(prevState => {
+            const newSquares = prevState.squares.map((square, i) => {
+                return i === 0 ? square = 'pink' : square;
+            })
+
+            return {squares: newSquares}
+        })
+    }
+
+    yellowSquare = () => {
+        this.setState(prevState => {
+            const newSquares = prevState.squares.map((square, i) => {
+                return i === 1 ? square = 'yellow' : square;
+            })
+            return {squares: newSquares}
+        })
+    }
+
+    maroonSquare = () => {
+        this.setState(prevState => {
+            const newSquares = prevState.squares.map((square, i) => {
+                return i === 2 ? square = 'maroon' : square;
+            })
+            return {squares: newSquares}
+        })
+    }
     
+    greenSquare = () => {
+        this.setState(prevState => {
+            const newSquares = prevState.squares.map((square, i) => {
+                return i === 3 ? square = 'green' : square;
+            })
+            return {squares: newSquares}
+        })
+    }
+
+    playSound = (url) => {
+        this.setState()
+    }
+
     render() {
-        const mapped = this.state.squares.map(square => {
+        const mappedSquares = this.state.squares.map(square => {
            return <Colors color={square}/>
         })
         return (
             <div className='parent-component'>
-                {mapped}
+                {mappedSquares}
                 <button onClick={this.blackSquares} id='small-time' type='button'>Black or White</button>
                 <button onClick={this.purpleSquares} id='party-dj' type='button'>Purple</button>
                 <button onClick={this.blueSquaresR} id='pro-dj' type='button'>Left Blue</button>
                 <button onClick={this.blueSquaresL} id='pro-dj' type='button'>Right Blue</button>
+                <button onClick={this.pinkSquare} id='big-dj' type='button'>Pink</button>
+                <button onClick={this.yellowSquare} id='big-dj' type='button'>Yellow</button>
+                <button onClick={this.maroonSquare} id='big-dj' type='button'>Maroon</button>
+                <button onClick={this.greenSquare} id='big-dj' type='button'>Green</button>
             </div>
         )
     }
