@@ -1,5 +1,6 @@
 document.getElementById('add-todo').addEventListener('submit', function(e){
     e.preventDefault()
+
     let addedItem = document.getElementById('title').value;
     let list = document.getElementById('list');
     let li = document.createElement('li');
@@ -18,8 +19,8 @@ document.getElementById('add-todo').addEventListener('submit', function(e){
         e.preventDefault
         this.parentNode.remove();
     })
-    // editButton.addEventListener.length('submit', function() {
-    //     this.parentNode.
+    // editButton.addEventListener('submit', function() {
+    //     this.parentNode.filter()
     // })
     
     list.appendChild(li);
