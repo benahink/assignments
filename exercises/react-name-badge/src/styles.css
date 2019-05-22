@@ -4,7 +4,7 @@
     width: 100%;
 }
 
-.form {
+.input {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -12,12 +12,32 @@
     padding: 10px;
 }
 
-.nameTag {
+.boxAndBtn {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.nameTagDiv {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 10px;
     padding: 10px;
     background: white;
-    font-size: 15px; 
+    font-size: 10px; 
+}
+
+#about {
+    height: 200px;
+    padding: 10px;
+    text-align: start;
+}
+
+span {
+    background: #39ccc3;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
