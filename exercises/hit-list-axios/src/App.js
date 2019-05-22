@@ -26,7 +26,7 @@ class App extends Component {
                     <div>
                         <div className='person-div'>
                             <img src={person.image} alt=" "/>
-                            <h1>{person.name}</h1>
+                            <h2>{person.name}</h2>
                         </div>
                     </div>
                 </>
@@ -37,7 +37,9 @@ class App extends Component {
         return ( 
             <>
                 <header>
-                    Don Corleone's Hit List
+                    <h1>
+                        Don Corleone's Hit List
+                    </h1>
                 </header>    
                 <div className='main-container'>
                     {mappedPeople}
