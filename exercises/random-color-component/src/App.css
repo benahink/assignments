@@ -1,12 +1,31 @@
+* {
+    margin: 0;
+}
+
 .color-container {
-    height: 100vh;
-    border: 1px gray solid;
+    display: grid; 
+    height: 33vh;
+    border: 5px black solid;
 }
 
 .color {
-    height: 100%;
+    height: 100px;
 }
 
 .button {
+    height: 100px;
     text-align: center;
+    background: tomato
+}
+
+.button2 {
+    height: 100px;
+    text-align: center;
+    background: tomato
+}
+
+.button3 {
+    height: 100px;
+    text-align: center;
+    background: tomato
 }

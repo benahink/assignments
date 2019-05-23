@@ -6,7 +6,8 @@ class App extends Component {
     constructor() {
         super();
         this.state = { 
-            colors: []
+            colors: [],
+            divColor: ""
         }
     }
 
@@ -23,37 +24,17 @@ class App extends Component {
 
     
     handleClick = () => {
-        
+        let randNum = Math.floor(Math.random() * 163);
+        this.setState({divColor: this.state.colors[randNum].hex})
     }
 
     render() { 
-        const mappedColors = this.state.colors.map(color => {
-            return (
-                <div className="color-container">
-                    {/* <h3>{color.id}</h3>  */}
-                    <div style={{backgroundColor: `#${color.hex}`}} className="color">
-                        {/* {color.hex} */}
-                    </div>
-                </div>
-            )
-        })
-        
-        
-        const randomNum = () => {
-            let randNum = Math.floor(Math.random() * 163);
-            return randNum;
-        }
-
-        return ( 
-            <>
-                <div className="main-container">
-                    <form className="form">
-                        <button className="button">Change Color</button>
-                    </form>
-                    {mappedColors[randomNum()]}
-                </div>
-            </>
-        );
+        return (
+            <div className="color-container">
+                <button onClick={this.handleClick} className="button">Change Color</button>
+                <div style={{backgroundColor: `#${this.state.divColor}`}} className="color"></div>
+            </div>
+        )
     }
 }
  
