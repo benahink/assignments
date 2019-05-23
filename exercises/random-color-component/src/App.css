@@ -1,0 +1,12 @@
+.color-container {
+    height: 100vh;
+    border: 1px gray solid;
+}
+
+.color {
+    height: 100%;
+}
+
+.button {
+    text-align: center;
+}
