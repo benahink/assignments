@@ -1,6 +1,7 @@
-import React from 'react'
-import Colors from './Colors'
-import './styles.css'
+import React from 'react';
+import Colors from './Colors';
+import './styles.css';
+import Music from './Music';
 
 class App extends React.Component {
     constructor() {
@@ -85,9 +86,6 @@ class App extends React.Component {
         })
     }
 
-    playSound = (url) => {
-        this.setState()
-    }
 
     render() {
         const mappedSquares = this.state.squares.map(square => {
@@ -104,6 +102,7 @@ class App extends React.Component {
                 <button onClick={this.yellowSquare} id='big-dj' type='button'>Yellow</button>
                 <button onClick={this.maroonSquare} id='big-dj' type='button'>Maroon</button>
                 <button onClick={this.greenSquare} id='big-dj' type='button'>Green</button>
+                <Music />
             </div>
         )
     }
