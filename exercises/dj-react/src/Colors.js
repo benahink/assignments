@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Color from './Color';
 
 const Colors = (props) => {
     return (
@@ -6,4 +7,4 @@ const Colors = (props) => {
     )
 }
 
-export default Colors
+export default Colors;
