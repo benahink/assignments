@@ -5,9 +5,9 @@ import styles from "./styles.css";
 const App = () => {
     return(
         <>
-        <div className="container" >
-            <Form />
-        </div>
+            <div className="container" >
+                <Form />
+            </div>
         </>
     )
 }

@@ -13,7 +13,7 @@ class Form extends Component {
             phone: "", 
             favFood: "", 
             about: "", 
-            nameTags: []
+            nameTags: [],
         }
     }
 
@@ -49,7 +49,7 @@ class Form extends Component {
             return (
                 <div className="nameTag">
                     <div className="nameTagDiv">
-                        <span>Badge: </span>
+                        <span className="badge">Badge: </span>
                         <h3>
                         Name: {nameTag.fName} {nameTag.lName}
                         </h3> 
@@ -57,12 +57,14 @@ class Form extends Component {
                         <h3>Place of Birth: {nameTag.placeOfBirth} </h3>
                         <h3>Favorite Food:{nameTag.favFood}</h3>
                         <h3>Email:{nameTag.email}</h3>
-                        <p>{nameTag.about}</p>
+                        <p className="paragraph">{nameTag.about}</p>
                     </div>
                 </div>
             )
         })
 
+        const {fName, lName, email, placeOfBirth, phone, favFood, about} = this.state
+        const enable = fName.length > 3 && lName.length > 3 && email.length > 3 && placeOfBirth.length > 3 && phone.length > 3 && favFood.length > 3 && about.length > 3
         return (  
             <>
                 <form className="form" onSubmit={this.handleSubmit}>
@@ -105,7 +107,7 @@ class Form extends Component {
                                 name="about" 
                                 value= {this.state.about}
                                 onChange={this.handleChange}/>
-                        <button>Submit</button>
+                        <button disabled={!enable}>Submit</button>
                     </div>
                 </form>
                 {mappedNameTags}
