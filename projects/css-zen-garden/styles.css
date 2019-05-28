@@ -7,7 +7,7 @@
 @font-face {
     font-family: 'verdemoderna';
     font-style: 'normal';
-    src: url(http://www.csszengarden.com/214/verdemoderna.woff) format('woff');
+    src: url('http://www.csszengarden.com/214/verdemoderna.woff') format('woff');
 }
 
 body {
@@ -22,7 +22,6 @@ body {
     text-align: start;
     text-indent: 0px;
     font-size: 10px;
-    background-image: url('./images/bamboo.png');
 }
 
 .header {
@@ -44,7 +43,7 @@ body {
     float: center;
 }
 
-#navigation {
+.navigation {
     position: absolute;
     top: 185px;
     background: transparent;
@@ -78,27 +77,27 @@ body {
     color: rgba(255,255,255,0.6);
 }
 
-#beauty, #footer {
+#beauty, .footer {
     font-size: 12px;
     font-style: italic;
 }
 
-#about{
+.about{
     background: #fff;
     height: auto;
 }
 
-#participation {
+.participation {
     background: rgba(138,188,159,0.5);
     height: auto;
 }
 
-#requirements {
+.requirements {
     background: #fff;
     height: auto;
 }
 
-.design-by {
+.design-by > p {
     height: auto;
     background-image: url('./images/contours-opaque.png'), url('./images/koi.jpg');
     background-position: left; 
@@ -112,14 +111,20 @@ body {
     line-height: 33.6px;
 }
 
-.design-by > a {
+.design-by > p > a {
     color:  #fff;
     font-style: normal;
 }
 
-#social-media {
+.social-media {
     background: #134347;
     height: 100px;
+    text-align: center;
+}
+
+.social-media > a {
+    font-family: 'verdemoderna';
+    color: #ffff;
 }
 
 .credits {
@@ -132,6 +137,7 @@ p {
     margin-right: 30px;
     margin-left: 30px;
     font-size: 10px;
+    padding-top: 5px;
 }
 
 .list {
@@ -144,6 +150,8 @@ p {
     'l l';
     color: #c0cac3;
     font-style: italic;
+    background: #e5ede8;
+    padding: 0;
 }
 
 .list-items {
@@ -181,7 +189,7 @@ a {
     height: auto;
 }
 
-.lists {
+.links {
     list-style: none;
     display: grid;
     grid-template-areas: 
@@ -191,12 +199,14 @@ a {
     grid-row-start: 1;
     text-align: left;
     text-transform: uppercase;
+    padding: 0;
 }
 
 .links > li {
-    float: left;
+    align-items: left;
     padding: 10px;
-    border-bottom: #134347 1px solid;
+    border-top: #134347 1px solid;
+    width: 100%;
 }
 
 h1 {
@@ -211,6 +221,7 @@ h3 {
     font-size: 15px;
     margin-right: 30px;
     margin-left: 30px;
+    padding-top: 10px;
 }
 
 h4 {
@@ -220,16 +231,17 @@ h4 {
 @media screen and (min-width: 1130px) {
     body {
         grid-template:
-        "header header" 18vh
-        "about credits" 35vh
-        "part credits" 27vh
-        "req links" 37vh
-        "design design" 0vh
-        "social social" 0vh
-        / 65% 35%;
+        "header nav" 18vh
+        "about credits" auto
+        "part part" auto
+        "req links" auto
+        "design design" auto
+        "footer footer" auto
+        / 65vw 35vw;
     }
 
-    #navigation {
+    .navigation {
+        grid-area: nav;
         width: 35%;
         height: 245px;
         position: absolute;
@@ -240,67 +252,80 @@ h4 {
     .header{
         grid-area: header; 
     }
-    #navigation {
-        grid-area: nav;
-    }
-    #about {
+
+    .about {
         grid-area: about;  
     }
-    #participation {
+    .participation {
         grid-area: part; 
+        padding-right: 35vw;
+        background-attachment: 
     }
     
-    #requirements {
+    .requirements {
         grid-area: req; 
     }
     
     .design-by{
         grid-area: design; 
+        text-align: center;
     }
     
-    #social-media {
-        grid-area: social; 
+    .footer {
+        grid-area: footer; 
     }
     
     .credits {
         grid-area: credits;
+        display: flex;
+        flex-direction: row;
     }
     
     .links-container {
         grid-area: links; 
+        height: 555px;
+        background:#e5ede8;
     }
 
-    .credits {
-        display: flex;
-        flex-direction: row;
+    h3 {
+        font-size: 22px;
+        padding: 30px 80px 0px 80px;
     }
 
-    p, h3 {
-        padding-left: 60px;
-        padding-right: 60px;
+    p {
+        font-size: 13px;
+        line-height: 24px;
+        padding: 30px 80px 0px 80px;
     }
 
     .list{
-        height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
-        background: rgb(192, 202, 195); 
+        background: #e5ede8; 
+        padding-left: 60px;
+        padding-top: 60px;
+        margin: 0;
     }
 
     .list-items {
         border-bottom: #607476 1px solid;
         font-size: 14px;
+        width: 200px;
     }
 
-    .lists {
+    .links {
         display: flex;
         flex-direction: column;
+        /* background: #e5ede8; */
+        padding-left: 60px;
+        padding-top: 60px;
     }
 
-    .lists > li{
+    .links > li {
         height: 50px;
-        width: 100%;
+        width: 200px;;
         border-bottom: #607476 1px solid;
     }
+
 }
