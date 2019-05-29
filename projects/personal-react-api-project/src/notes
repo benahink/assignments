@@ -1,0 +1,51 @@
+1. What are you building? Who is it for?
+
+    My app idea is to create a recipes app that allows users to search and save recipes, 
+    create a favorites list, or a frequently used recipes list. I'd like the app to allow users to add their own 
+    recipes to share with friends and family, or the app community. 
+    The app will have a basic search bar that will search by the recipe name or by ingredients in the
+    recipe. I'm not sure if I'd like to add a feature where the user can edit the current recipe and 
+    customize it to their liking, and have that saved to their profile.    
+
+2. What are the components you need to make the app work?
+
+    (omit this for now)-app needs a login or register page 
+    (omit this for now)-users needs a my profile page (Maybe a welcome message)
+    -app needs a top recipes page (Home page)
+    -app needs a search bar          
+    -app needs a results page (title, image, link to the recipe)
+    -recipes need a title
+    -recipes need an image
+    -recipes need a description
+    -recipes need ingredients
+    (omit this for now)-users need a save recipes button to my profile
+    (omit this for now)-users need a logout button
+
+3. Users Stories: 
+
+    -As a user, I want to save recipes
+    -As a user, I want easy to use navigation
+    (omit this for now)-As a cook, I want to be able to edit recipes and save to my profile
+    (omit this for now)-As a cook, I want to be able to upload recipes
+    (omit this for now)-As a cook, I want to be able to share uploaded recipes
+    -As a user, I can categorize saved recipes (create folders)
+    (omit this for now)-As a user, I want to share recipes with others (links)
+
+4. WireFrame :
+
+    ***See drawing***
+
+5. Mind map:
+    ***See drawing***
+
+
+
+
+// the users will also be able to edit current recipes to their liking
+// users will be able to upload their own recipes and share with friends and family, or the app community
+
+
+Ideas:
+https://github.com/rodriguez-hernan/react-recipeList
+https://github.com/hrzyusoff/react-login
+https://github.com/gracekhal/login-page
