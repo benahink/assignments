@@ -9,87 +9,62 @@ class Recipe extends Component {
             recipesArr: [],
             filteredRecipes: [],
             filtering: false,
-            value: ''
+            searchTerm: ''
         }
     }
-  
-    getRecipes() {
-        const api_key = '63f9badb263245ba705ab49495786188';
+
+    componentDidMount(){
+        this.setState({recipesArr: recipes.recipes})
+
+
+        // const api_key = '63f9badb263245ba705ab49495786188';
         // const query = 'chicken'
         // const URL = `https://www.food2fork.com/api/search?key=${api_key}&q=&count=2`;
         // Axios.get(URL).then(response => {
-        //     let data = response.data.recipes
-        //     data.map(recipe => ({
-        //         title: `${recipe.title}`,
-        //         image: `${recipe.image_url}`
-        //     }))
-
-        //     this.setState({
-        //         recipesArr: data
-        //     })
+        //     this.setState({recipesArr: response.data.recipes})
         // })
-        let data = recipes.recipes
-        console.log(data)
-        data.map(recipe => ({
-            title: `${recipe.title}`,
-            image: `${recipe.image_url}`
-        }))
-
-        this.setState({
-            recipesArr: data
-        })
     }
-
-    componentDidMount() {
-        this.getRecipes();
-    }
-
+  
     handleChange = (event) => {
-        this.setState({
-            value: event.target.value
-        })
-    }
-
-    handleSubmit = (event) => {
-        if(event.target.value === ''){
+        let {value, name} = event.target
+        if(value === ''){
             this.setState({
-                filtering: false
+                filtering: false,
+                [name]: value
             })
-            console.log('fired')
         }else {
             this.setState(prevState => {
                 return {
-                    filteredRecipes: prevState.recipesArr.filter(recipe => recipe.title.includes(event.target.value)),
-                    filtering: true
+                    filteredRecipes: prevState.recipesArr.filter(recipe => recipe.title.toLowerCase().includes(value)),
+                    filtering: true,
+                    [name]: value
                 }
             })
-            console.log("no, this fired")
         }
     }
 
     render() { 
-        console.log(this.state.recipesArr)
         const { filtering, recipesArr, filteredRecipes } = this.state;
-        const mappedData = this.state.recipesArr.map(recipe => {
+        let recipesToMap = filtering ? filteredRecipes : recipesArr
+        const mappedData = recipesToMap.map(recipe => {
            return (
                <div>
                    <h1>{recipe.title}</h1>
+                   <img src={recipe.image_url} alt=""/>
                </div>
            )
         })
         return ( 
             <>
-                <h1>Results: </h1>
-                <div>
-                    {[filtering] ? filteredRecipes : recipesArr}
-                </div>
+                
                 <form onSubmit={this.handleSubmit}>
                     <input  type="text" 
                             placeholder="Search"
-                            name="recipesArr" 
+                            name="searchTerm" 
                             value={this.state.value}
                             onChange={this.handleChange}/>
                 </form>
+                <h1>Results: </h1>
                 <ul>
                     {mappedData}
                 </ul>
