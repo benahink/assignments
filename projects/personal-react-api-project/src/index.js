@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from "./App";
+import GlobalProvider from './GlobalProvider'
 
-ReactDOM.render(<App />, document.getElementById('root') )
+
+ReactDOM.render(
+<GlobalProvider>
+    <App />
+</GlobalProvider>, document.getElementById('root'))
