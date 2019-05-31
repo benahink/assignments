@@ -10,7 +10,9 @@ class GlobalProvider extends Component {
             recipesArr: [],
             filteredRecipes: [],
             filtering: false,
-            searchInput: ''
+            searchInput: '',
+            savedItemId: [],
+            liked: false
         }
     }
 
@@ -41,9 +43,36 @@ class GlobalProvider extends Component {
         }
     }
 
+    handleLike = (event) => {
+        console.log(event.target.value)
+        // const { checked, value } = event.target;
+        // let { savedItemId } = this.state;
+        // if(checked) {
+        //     this.setState(prevState => {
+        //         return {
+        //             savedItemId: [...prevState.savedItemId, value]
+        //         }
+        //     })
+        //     console.log('this fired')
+        // } else {
+        //     this.setState({
+        //         savedItemId: savedItemId
+        //     })
+        //     console.log('no, this fired')
+        // }
+        // this.setState({
+        //     savedItemId: savedItemId
+        // })
+        this.setState({
+            liked: !this.state.liked
+        })
+    }
+
     render() { 
+        console.log(this.state.savedItemId)
         const props = {
             handleChange: this.handleChange, 
+            handleLike: this.handleLike,
             ...this.state
         }
         return (  

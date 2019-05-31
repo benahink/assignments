@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from "./App";
-import GlobalProvider from './GlobalProvider'
+import GlobalProvider from './GlobalProvider';
+import { BrowserRouter } from 'react-router-dom'
 
 
 ReactDOM.render(
 <GlobalProvider>
-    <App />
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
 </GlobalProvider>, document.getElementById('root'))

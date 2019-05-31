@@ -11,17 +11,21 @@ class Recipe extends Component {
     }
 
     render() { 
-        console.log(this.props)
         const { filtering, recipesArr, filteredRecipes } = this.props;
-        let recipesToMap = filtering ? filteredRecipes : recipesArr
+        let recipesToMap = filtering ? filteredRecipes : recipesArr;
+        let buttonText = this.props.liked ? "Unlike" : "Like";
         const mappedData = recipesToMap.map(recipe => {
             return (
                 <div className='recipe-div'>
-                    <a href="">{recipe.title}</a>
+                    <a href="000">{recipe.title}</a>
                     <img src={recipe.image_url} alt=""/>
+                    <button onClick={this.props.handleLike}>
+                        <h1>{buttonText}</h1>
+                    </button>
                 </div>
             )
         })
+
         return ( 
             <>
                 <div className='search'>
@@ -32,7 +36,6 @@ class Recipe extends Component {
                                 value={this.state.value}
                                 onChange={this.props.handleChange}/>
                     </form>
-
                 </div>
                 <h1>Results: </h1>
                 <div className='recipes-container'>
