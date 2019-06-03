@@ -1,5 +1,5 @@
 import recipes from './recipe/recipe.json';
-import Axios from 'axios';
+// import Axios from 'axios';
 import React, { Component } from 'react';
 const { Consumer, Provider } = React.createContext();
 
@@ -11,8 +11,8 @@ class GlobalProvider extends Component {
             filteredRecipes: [],
             filtering: false,
             searchInput: '',
-            savedItemId: [],
-            liked: false
+            liked: false,
+            likedRecipes: []
         }
     }
 
@@ -23,6 +23,32 @@ class GlobalProvider extends Component {
         // Axios.get(URL).then(response => {
         //     this.setState({recipesArr: response.data.recipes})
         // })
+    }
+
+    addLiked = (recipe) => {
+        this.setState(prevState => {
+            return {
+                likedRecipes: [...prevState.likedRecipes, recipe]
+            }
+        })
+        localStorage.setItem('likedRecipes', recipe)
+    }
+
+    //filtering through saved recipes and comparing ids. if the recipe id = id in the saved recipes array, we will not include it
+    removeLiked = (recipe) => {
+        console.log(recipe)
+        this.setState(prevState => {
+            return {
+                likedRecipes: prevState.likedRecipes.filter(item =>  item.recipe_id !== recipe.recipe_id)
+            }}
+        )
+    }
+
+    createFavList = (event) => {
+        event.preventdefault()
+        this.setState(prevState => {
+            window.localStorage.setItem('savedList', JSON.stringify(prevState.likedRecipes));
+        })
     }
 
     handleChange = (event) => {
@@ -43,38 +69,17 @@ class GlobalProvider extends Component {
         }
     }
 
-    handleLike = (event) => {
-        console.log(event.target.value)
-        // const { checked, value } = event.target;
-        // let { savedItemId } = this.state;
-        // if(checked) {
-        //     this.setState(prevState => {
-        //         return {
-        //             savedItemId: [...prevState.savedItemId, value]
-        //         }
-        //     })
-        //     console.log('this fired')
-        // } else {
-        //     this.setState({
-        //         savedItemId: savedItemId
-        //     })
-        //     console.log('no, this fired')
-        // }
-        // this.setState({
-        //     savedItemId: savedItemId
-        // })
-        this.setState({
-            liked: !this.state.liked
-        })
-    }
-
     render() { 
-        console.log(this.state.savedItemId)
+        console.log(this.state.likedRecipes)
         const props = {
             handleChange: this.handleChange, 
             handleLike: this.handleLike,
+            addLiked: this.addLiked,
+            removeLiked: this.removeLiked,
+            createFavList: this.createFavList,
             ...this.state
         }
+
         return (  
             <Provider value={props}>
                 {this.props.children}
@@ -85,7 +90,7 @@ class GlobalProvider extends Component {
  
 export default GlobalProvider;
 
-export const withTheme = C => props => (
+export const withProvider = C => props => (
     <Consumer>
         {value => <C {...value} {...props} />}
     </Consumer>
