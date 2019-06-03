@@ -28,9 +28,6 @@ class Recipe extends Component {
                     </form>
                 </div>
                 <h1>Results: </h1>
-                <form className='liked-unliked' onSubmit={this.props.createFavList} >
-                    <button>Save</button>
-                </form>
                 <div className='recipes-container'>
                     {mappedData}
                 </div>

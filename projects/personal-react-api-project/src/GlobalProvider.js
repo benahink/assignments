@@ -1,5 +1,5 @@
 import recipes from './recipe/recipe.json';
-// import Axios from 'axios';
+import Axios from 'axios';
 import React, { Component } from 'react';
 const { Consumer, Provider } = React.createContext();
 
@@ -20,7 +20,9 @@ class GlobalProvider extends Component {
         this.setState({recipesArr: recipes.recipes})
         // const api_key = '63f9badb263245ba705ab49495786188';
         // const URL = `https://www.food2fork.com/api/search?key=${api_key}&q=&page=1`;
+        // const URL = `https://www.food2fork.com/api/search?key=${api_key}&q=shredded%20chicken`;
         // Axios.get(URL).then(response => {
+        //     console.log(response.data)
         //     this.setState({recipesArr: response.data.recipes})
         // })
     }
@@ -31,24 +33,15 @@ class GlobalProvider extends Component {
                 likedRecipes: [...prevState.likedRecipes, recipe]
             }
         })
-        localStorage.setItem('likedRecipes', recipe)
     }
 
     //filtering through saved recipes and comparing ids. if the recipe id = id in the saved recipes array, we will not include it
     removeLiked = (recipe) => {
-        console.log(recipe)
         this.setState(prevState => {
             return {
                 likedRecipes: prevState.likedRecipes.filter(item =>  item.recipe_id !== recipe.recipe_id)
             }}
         )
-    }
-
-    createFavList = (event) => {
-        event.preventdefault()
-        this.setState(prevState => {
-            window.localStorage.setItem('savedList', JSON.stringify(prevState.likedRecipes));
-        })
     }
 
     handleChange = (event) => {
@@ -70,7 +63,6 @@ class GlobalProvider extends Component {
     }
 
     render() { 
-        console.log(this.state.likedRecipes)
         const props = {
             handleChange: this.handleChange, 
             handleLike: this.handleLike,

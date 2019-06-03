@@ -13,7 +13,12 @@
 .navbar > a {
     color: #ffffff;
     font-size: 20px;
+    text-decoration: none;
     padding: 5px;
+}
+
+.navbar > a:hover {
+    background-color: #be4031;
 }
 
 .header {
@@ -30,6 +35,8 @@
     height: 100vh;
 }
 
-.active {
-    background-color: #0099FF;
+.home > img {
+    height: 50vh;
+    width: 100vw;
+    z-index: 2;
 }

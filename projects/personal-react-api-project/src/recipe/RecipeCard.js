@@ -13,7 +13,7 @@ class RecipeCard extends Component {
     }
     
     render() { 
-        const {title, image_url} = this.props.recipe
+        const {title, image_url, f2f_url} = this.props.recipe
         return (
             <>
                 <div className='recipe-div'>
@@ -21,8 +21,9 @@ class RecipeCard extends Component {
                     <img src={image_url} alt=""/>   
                     <input  name="liked"
                             type="checkbox"
+                            id="checkbox"
                             onChange={this.handleInputChange}/>
-                    <Modal recipeTitle={title} image={image_url}/>
+                    <Modal title={title} image={image_url} recipe={f2f_url}/>
                 </div>
             </>
         );

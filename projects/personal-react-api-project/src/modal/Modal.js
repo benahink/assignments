@@ -9,20 +9,15 @@ const Modal = (props) => (
         <a href="000" className="close" onClick={close}>
           &times;
         </a>
-        <div className="header"> {props.title} </div>
-        <div className="content">
+        <div className="header"> {props.title}</div>
+        <div className="ingredients">
           {' '}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
-          Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
-          delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sit
-          commodi beatae optio voluptatum sed eius cumque, delectus saepe repudiandae
-          explicabo nemo nam libero ad, doloribus, voluptas rem alias. Vitae?
+          <h3>Go To <a href={props.recipe}>Ingredients</a>: </h3>
+          
         </div>
-        <div className="actions">
+        <div className="instructions">
           <Popup
-            trigger={<button className="button"> Trigger </button>}
+            trigger={<button className="button"> More info </button>}
             position="top center"
             closeOnDocumentClick
           >
@@ -40,7 +35,7 @@ const Modal = (props) => (
               close()
             }}
           >
-            close modal
+            close
           </button>
         </div>
       </div>
