@@ -1,8 +1,12 @@
 import React from 'react';
+import './Navbar.css';
 
 const Home = () => {
     return (
-        <div>Home</div>
+        <div className='home'>
+             Home
+            <img src="https://unsplash.com/photos/Tmz8FThN_BE" alt=""/>
+        </div>
     );
 }
  

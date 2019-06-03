@@ -4,14 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico|Acme&display=swap');
 
-.main-container {
-    background: #D1E4DE;
+.container {
+    background: #1a2128;
+    border: 5px black solid;
+    width: 100vw;
 }
 
-.header {
-    background: #D1E4DE;
-    height: 100px;
-    font-family: 'Pacifico', cursive;
-    font-size: 20px;
-    color: #394440;
-}

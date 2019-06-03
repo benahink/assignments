@@ -17,8 +17,8 @@ class RecipeCard extends Component {
         return (
             <>
                 <div className='recipe-div'>
-                    {/* <a href="000">{title}</a>
-                    <img src={image_url} alt=""/>    */}
+                    <a href="000">{title}</a>
+                    <img src={image_url} alt=""/>   
                     <input  name="liked"
                             type="checkbox"
                             onChange={this.handleInputChange}/>

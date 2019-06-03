@@ -6,6 +6,7 @@ const Navbar = (props) => {
     return (
         <>
             <div className="navbar">
+                <h1 className="header">Recipe's App</h1>
                 <Link to="/">Home</Link>
                 <Link to="/top-recipes">Top Recipes</Link>
                 <Link to="/my-favorites">My Favorites</Link>

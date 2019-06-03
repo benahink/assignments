@@ -22,15 +22,16 @@ class Recipe extends Component {
                         <input  type="text" 
                                 placeholder="Search"
                                 name="searchInput" 
+                                id="search"
                                 value={this.state.value}
                                 onChange={this.props.handleChange}/>
                     </form>
                 </div>
                 <h1>Results: </h1>
+                <form className='liked-unliked' onSubmit={this.props.createFavList} >
+                    <button>Save</button>
+                </form>
                 <div className='recipes-container'>
-                    <form className='liked-unliked' onSubmit={this.props.createFavList} >
-                        <button>Save</button>
-                    </form>
                     {mappedData}
                 </div>
             </div>
