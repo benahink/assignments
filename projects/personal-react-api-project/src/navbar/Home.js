@@ -3,8 +3,7 @@ import './Navbar.css';
 
 const Home = () => {
     return (
-        <div className='home'>
-             Home
+        <div className="home">
             <img src="https://unsplash.com/photos/Tmz8FThN_BE" alt=""/>
         </div>
     );

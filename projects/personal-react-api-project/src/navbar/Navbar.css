@@ -17,7 +17,7 @@
     padding: 5px;
 }
 
-.navbar > a:hover {
+.navbar > a:focus {
     background-color: #be4031;
 }
 
@@ -30,13 +30,11 @@
 }
 
 .home {
-    background: #1a2128; 
-    width: 200px;
-    height: 100vh;
+    /* background: #1a2128;  */
+    background-image: url('https://unsplash.com/photos/Tmz8FThN_BE');
 }
 
 .home > img {
-    height: 50vh;
-    width: 100vw;
-    z-index: 2;
+    height: auto;
+    width: 250px;
 }

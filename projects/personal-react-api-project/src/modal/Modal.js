@@ -2,8 +2,15 @@ import React from 'react';
 import Popup from 'reactjs-popup';
 import './Modal.css';
 
-const Modal = (props) => (
-    <Popup trigger={<button className="button"> View Recipe </button>} modal>
+const Modal = (props) => {
+    const ingredientArr = props.ingredients.map(ingredient => {
+      return (
+        <p>{ingredient}</p>
+      )
+    })
+    return (
+      <>
+      <Popup trigger={<button className="button"> View Recipe </button>} modal>
     {close => (
       <div className="modal">
         <a href="000" className="close" onClick={close}>
@@ -12,8 +19,7 @@ const Modal = (props) => (
         <div className="header"> {props.title}</div>
         <div className="ingredients">
           {' '}
-          <h3>Go To <a href={props.recipe}>Ingredients</a>: </h3>
-          
+        <div>{ingredientArr}</div>          
         </div>
         <div className="instructions">
           <Popup
@@ -41,6 +47,9 @@ const Modal = (props) => (
       </div>
     )}
   </Popup>
-)
+      </>
+    )
+    
+}
 
 export default Modal;

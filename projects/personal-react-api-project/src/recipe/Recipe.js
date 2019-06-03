@@ -13,7 +13,10 @@ class Recipe extends Component {
     render() { 
         const { filtering, recipesArr, filteredRecipes } = this.props;
         let recipesToMap = filtering ? filteredRecipes : recipesArr;
-        const mappedData = recipesToMap.map(recipe => <RecipeCard recipe={recipe}/>)
+        const mappedData = recipesToMap.map(recipe => {
+            recipe.checked = false
+            return <RecipeCard isFav={false} recipe={recipe}/>
+        })
 
         return ( 
             <div className="main-container">

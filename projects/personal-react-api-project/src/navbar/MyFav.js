@@ -3,8 +3,10 @@ import { withProvider } from "../GlobalProvider";
 import RecipeCard from '../recipe/RecipeCard'
 
 const MyFav = (props) => {
-    const mappedData = props.likedRecipes.map(recipe => <RecipeCard recipe={recipe}/>)
-    console.log(props.likedRecipes)
+    const mappedData = props.likedRecipes.map(recipe => {
+        return <RecipeCard isFav={true} recipe={recipe}/>
+    })
+    console.log(mappedData)
     return (
         <div>
             {mappedData}

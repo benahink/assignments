@@ -4,7 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico|Acme&display=swap');
 
-
+.delete-button {
+    display: block;
+    background-color: white;
+}
 #search {
     height: 100px;
     width: 400px;
@@ -16,7 +19,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(10, 1fr);
     grid-gap: 10px;
-    padding: 5px;
+}
+
+.recipes-container > h1 {
+    color: #ffffff;
+    font-size: 1em;
 }
 
 .recipe-div {

@@ -3,27 +3,41 @@ import { withProvider } from '../GlobalProvider';
 import Modal from '../modal/Modal.js';
 
 class RecipeCard extends Component {
+    constructor(props){
+        super(props)
+
+        this.state = {
+            isChecked: props.recipe.checked
+        }
+    }
 
     handleInputChange = (event) => {
-        if(event.target.checked){
-            this.props.addLiked(this.props.recipe)
+        const recipe = this.props.recipe
+        let {checked} = event.target
+        if(checked){
+            this.setState({isChecked: true})
+            this.props.addLiked(recipe)
         } else {
-            this.props.removeLiked(this.props.recipe)
+            this.setState({isChecked: false})
+            this.props.removeLiked(recipe)
         }
     }
     
     render() { 
-        const {title, image_url, f2f_url} = this.props.recipe
+        const {label, image, ingredientLines} = this.props.recipe.recipe
         return (
             <>
                 <div className='recipe-div'>
-                    <a href="000">{title}</a>
-                    <img src={image_url} alt=""/>   
-                    <input  name="liked"
+                    <a href="000">{label}</a>
+                    <img src={image} alt=""/>   
+                    <input  style={{display: this.props.isFav ? 'none' : 'block'}}
+                            name="liked"
                             type="checkbox"
                             id="checkbox"
+                            checked={this.state.isChecked}
                             onChange={this.handleInputChange}/>
-                    <Modal title={title} image={image_url} recipe={f2f_url}/>
+                    <button onClick={() => this.props.removeLiked(this.props.recipe)} className='delete-button' style={{display: this.props.isFav ? 'block' : 'none'}}>Delete</button>
+                    <Modal title={label} image={image} ingredients={ingredientLines}/>
                 </div>
             </>
         );

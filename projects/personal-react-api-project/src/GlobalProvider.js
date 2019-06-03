@@ -17,14 +17,13 @@ class GlobalProvider extends Component {
     }
 
     componentDidMount(){
-        this.setState({recipesArr: recipes.recipes})
-        // const api_key = '63f9badb263245ba705ab49495786188';
-        // const URL = `https://www.food2fork.com/api/search?key=${api_key}&q=&page=1`;
-        // const URL = `https://www.food2fork.com/api/search?key=${api_key}&q=shredded%20chicken`;
-        // Axios.get(URL).then(response => {
-        //     console.log(response.data)
-        //     this.setState({recipesArr: response.data.recipes})
-        // })
+        // this.setState({recipesArr: recipes.recipes})
+        const app_key = 'e250bb76cf85354c8322f287686a2323';
+        const app_id = '9ed8e16e';
+        const URL = `https://api.edamam.com/search?q=top+recipes&to=40&app_id=${app_id}&app_key=${app_key}`;
+        Axios.get(URL).then(response => {
+            this.setState({recipesArr: response.data.hits})
+        })
     }
 
     addLiked = (recipe) => {
@@ -39,7 +38,9 @@ class GlobalProvider extends Component {
     removeLiked = (recipe) => {
         this.setState(prevState => {
             return {
-                likedRecipes: prevState.likedRecipes.filter(item =>  item.recipe_id !== recipe.recipe_id)
+                likedRecipes: prevState.likedRecipes.filter(item =>  {
+                    return item.recipe.label !== recipe.recipe.label
+                })
             }}
         )
     }
@@ -54,7 +55,7 @@ class GlobalProvider extends Component {
         }else {
             this.setState(prevState => {
                 return {
-                    filteredRecipes: prevState.recipesArr.filter(recipe => recipe.title.toLowerCase().includes(value)),
+                    filteredRecipes: prevState.recipesArr.filter(recipe => recipe.recipe.label.toLowerCase().includes(value)),
                     filtering: true,
                     [name]: value
                 }
