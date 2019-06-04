@@ -19,7 +19,7 @@
 }
 
 .span2 {
-    background: rgb(193, 225, 210, 0.3);
+    background: rgb(254, 201, 148, 0.2);
     grid-column: 2 / 4;
     font-family: 'Fjalla One', sans-serif;    
     font-size: 25px;
@@ -48,7 +48,7 @@
 
 .footer {
     background: #EF2E25;
-    color: #FBFBFB;
+    /* color: #FBFBFB; */
     grid-column: 1 / 4;
     height: 15vh;
 }
@@ -57,6 +57,7 @@
     display: block;
     padding: 5px; 
     font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
 }
     
 @media screen and (max-width: 680px) {
