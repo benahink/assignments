@@ -8,7 +8,7 @@ const MyFav = (props) => {
     })
     console.log(mappedData)
     return (
-        <div>
+        <div className="my-fav">
             {mappedData}
         </div>
     )

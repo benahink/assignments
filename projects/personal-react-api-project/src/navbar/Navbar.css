@@ -4,37 +4,36 @@
 
 .navbar {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-columns: 375px 80px 140px 150px;
     align-items: center;
     padding: 10px;
-    width: 100vw;
+    width: 95vw;
 }
 
 .navbar > a {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
     padding: 5px;
 }
 
 .navbar > a:focus {
-    background-color: #be4031;
+    display: flex;
+    height: 50px;
+    background-color: #ac3b61;
 }
 
-.header {
-    background: #1a2128;
+#header {
+    background: #a8d0e6;
     height: 100px;
     font-family: 'Pacifico', cursive;
-    font-size: 40px;
-    color: #be4031;
+    font-size: 50px;
+    color: #ac3b61;
 }
 
-.home {
-    /* background: #1a2128;  */
-    background-image: url('https://unsplash.com/photos/Tmz8FThN_BE');
-}
-
-.home > img {
+.my-fav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
     height: auto;
-    width: 250px;
 }

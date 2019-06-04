@@ -1,0 +1,28 @@
+.home-container {
+    height: 100vh;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    height: 60%;
+    background-color: #a8d0e6;
+    grid-gap: 20px;
+    padding: 10px;
+} 
+
+.span2 {
+    background: white;
+    background-image: url('../images/pots.jpeg');
+    background-repeat: no-repeat;
+}
+
+.span10 {
+    background: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    color: #ac3b61;
+    padding: 10px;
+}

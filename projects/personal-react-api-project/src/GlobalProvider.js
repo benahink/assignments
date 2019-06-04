@@ -20,7 +20,7 @@ class GlobalProvider extends Component {
         // this.setState({recipesArr: recipes.recipes})
         const app_key = 'e250bb76cf85354c8322f287686a2323';
         const app_id = '9ed8e16e';
-        const URL = `https://api.edamam.com/search?q=top+recipes&to=40&app_id=${app_id}&app_key=${app_key}`;
+        const URL = `https://api.edamam.com/search?q=top+recipes&to=42&app_id=${app_id}&app_key=${app_key}`;
         Axios.get(URL).then(response => {
             this.setState({recipesArr: response.data.hits})
         })

@@ -8,8 +8,11 @@
     display: block;
     background-color: white;
 }
+
 #search {
-    height: 100px;
+    position: relative;
+    left: 0px;
+    height: 25px;
     width: 400px;
     background:#F1FFFF;
 }
@@ -21,13 +24,8 @@
     grid-gap: 10px;
 }
 
-.recipes-container > h1 {
-    color: #ffffff;
-    font-size: 1em;
-}
-
 .recipe-div {
-    background: #1a2128;
+    background: #a8d0e6;
     border: 1px solid #F1FFFF;
     display: flex;
     flex-direction: column; 

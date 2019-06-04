@@ -1,19 +1,28 @@
 .modal {
   font-size: 15px;
-  width: 385px;
-  height: 550px
+  width: auto;
+  height: 650px;
+  overflow: scroll;
 }
 
 .button {
-  color: #ffffff;
-  font-size: 15px;
+  color: #eb8282;
+  font-size: 20px;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #eb8282; /* Green */
+  color: white;
 }
 
 .modal > .header {
   width: 100%;
   border-bottom: 1px solid gray;
-  font-size: 18px;
-  color: #ffffff;
+  font-size: 25px;
+  color: #eb8282;
   text-align: center;
   padding: 5px;
 }
@@ -23,11 +32,10 @@
   padding: 10px 5px;
 }
 
-.modal > .actions {
+.modal > .ingredients {
   width: 100%;
   padding: 10px 5px;
   margin: auto;
-  text-align: center;
 }
 
 .modal > .close {

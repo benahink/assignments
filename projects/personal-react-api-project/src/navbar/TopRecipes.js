@@ -4,7 +4,6 @@ import Recipe from '../recipe/Recipe.js';
 const TopRecipes = () => {
     return (
         <div className="top-recipes">
-            Top Recipes
             <Recipe />
         </div>
     );

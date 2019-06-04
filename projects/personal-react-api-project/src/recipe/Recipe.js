@@ -30,7 +30,6 @@ class Recipe extends Component {
                                 onChange={this.props.handleChange}/>
                     </form>
                 </div>
-                <h1>Results: </h1>
                 <div className='recipes-container'>
                     {mappedData}
                 </div>
