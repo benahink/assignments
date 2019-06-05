@@ -4,10 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300|Permanent+Marker&display=swap');
 
-.main-container {
-    border: lightblue 2px solid;
+.work-container {
+    /* border: purple 2px solid; */
     height: auto;
-    width: 100vw;
     padding: 30px;
 }
 
@@ -18,7 +17,7 @@ h1 {
     top: 40px;
 }
 
-.work-container {
+.work {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

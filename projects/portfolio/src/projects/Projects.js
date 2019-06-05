@@ -9,9 +9,9 @@ class Projects extends Component {
 
     render() { 
         return ( 
-            <div className="main-container">
+            <div className="projects-container">
                 <h1>Projects: </h1>
-                <div className="projects-container">
+                <div className="projects">
                     <ProjectsCard />
                     <ProjectsCard />
                     <ProjectsCard />
