@@ -28,7 +28,7 @@ public class Canvas extends Component {
     Graphics2D graphics = (Graphics2D) g;
     Dimension canvasSize = getSize();
     
-    g.setColor(Color.BLACK);
+    g.setColor(Color.pink);
     graphics.fillRect(0, 0, canvasSize.width, canvasSize.height);
     
     for (CanvasShape shape : shapes) {
