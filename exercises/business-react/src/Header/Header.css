@@ -1,0 +1,8 @@
+.header {
+    height: 255px;
+    margin: 5px;
+    border: 5px solid #4A6DE5;
+    background-image: url("../image/giraffe-and-acacia.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}

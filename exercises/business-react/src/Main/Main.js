@@ -1,13 +1,18 @@
-import React from 'react'
-import './styles.css'
+import React, { Component } from 'react';
+import './Main.css'
 
-const Main = ()=> {
-    
-    return (
-        <div className="main-container">
-        Stuff Here
-        </div>
-    )
-} 
+class Main extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {  }
+    }
+    render() { 
+        return ( 
+            <div className="main-container">
 
-export default Main
+            </div>
+        );
+    }
+}
+ 
+export default Main;
