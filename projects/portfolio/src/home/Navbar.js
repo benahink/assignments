@@ -4,7 +4,9 @@ import './Home.css';
 class Navbar extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { 
+
+        }
     }
 
     openNav() {
@@ -14,6 +16,7 @@ class Navbar extends Component {
     closeNav() {
         document.getElementById("myNav").style.width = "0%";
     }
+
     render() { 
         return ( 
             <>
@@ -27,13 +30,15 @@ class Navbar extends Component {
                             <h2>BENAHIN KUR</h2>
                             <h3>_____________</h3>
                             <a href="#"><li>Home</li></a>
+                            <a href="#"><li>Projects</li></a>
+                            <a href="#"><li>Work</li></a>
+                            <a href="#"><li>Resume</li></a>
                             <a href="#"><li>About</li></a>
-                            <a href="#"><li>Contact</li></a>
                         </ul>
                     </div>
                 </nav>              
             </>
-         );
+        )
     }
 }
  

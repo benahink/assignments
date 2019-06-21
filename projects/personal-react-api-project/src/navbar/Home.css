@@ -1,21 +1,18 @@
 .home-container {
-    height: 100vh;
+    height: auto;
 }
 
 .row {
     display: grid;
     grid-template-columns: 150px auto 150px;
-    grid-gap: 1em;
-    background-color: #FBFBFB;
-    padding: 10px;
+    background-color: #ffffff;
 } 
 
 .span1 {
-    background: #FBFBFB;
     background-image: url('../images/pots.jpeg');
     background-repeat: no-repeat;
     grid-column: 1 / 2;
-    height: 30vh;
+    height: 300px;
 }
 
 .span2 {
@@ -25,39 +22,23 @@
     font-size: 25px;
     line-height: 40px;
     text-align: center;
-    padding: 10px;
-    height: 30vh;
+    height: 300px;
 }
 
 .photos {
-    height: 500px;
-    width: 100vw;
+    height: auto;
+    width: 95vw;
     grid-column: 1 / 4;
-    grid-row: auto; 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 10px;
 }
 
 .firstPic, .secPic, .thirdPic, .fourthPic, .fifthPic, .sixthPic {
-    height: 240px;
+    height: 200px;
     width: 33%;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.footer {
-    background: #EF2E25;
-    /* color: #FBFBFB; */
-    grid-column: 1 / 4;
-    height: 15vh;
-}
-
-.footer > p {
-    display: block;
-    padding: 5px; 
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 20px;
 }
     
 @media screen and (max-width: 680px) {
@@ -72,16 +53,12 @@
         background-size: cover;
     }
 
-    .footer {
-        height: 10vh;
-    }
-
     .firstPic, .secPic, .thirdPic, .fourthPic, .fifthPic, .sixthPic {
         height: 240px;
         width: 33%;
         background-size: cover;
     }
-  }
+}
 
   
   

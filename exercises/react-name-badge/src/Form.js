@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import styles from "./styles.css";
+import "./styles.css";
 
 class Form extends Component {
     constructor() {
         super();
-
         this.state = { 
             fName: "", 
             lName: "", 
@@ -35,16 +34,17 @@ class Form extends Component {
             favFood: this.state.favFood, 
             about: this.state.about
         }
-
+        
         this.setState(prevState => {
-           return {
-               nameTags: [...prevState.nameTags, newNameTags]
-           }
+            return {
+                nameTags: [...prevState.nameTags, newNameTags]
+            }
+        }, () => {
+            localStorage.setItem("nameTags", JSON.stringify(this.state.nameTags))
         })
     }
-
+    
     render() { 
-
         const mappedNameTags = this.state.nameTags.map((nameTag) => {
             return (
                 <div className="nameTag">
@@ -64,7 +64,7 @@ class Form extends Component {
         })
 
         const {fName, lName, email, placeOfBirth, phone, favFood, about} = this.state
-        const enable = fName.length > 3 && lName.length > 3 && email.length > 3 && placeOfBirth.length > 3 && phone.length > 3 && favFood.length > 3 && about.length > 3
+        const enable = fName.length >= 3 && lName.length >= 3 && email.length >= 3 && placeOfBirth.length >= 3 && phone.length >= 3 && favFood.length >= 3 && about.length >= 3;
         return (  
             <>
                 <form className="form" onSubmit={this.handleSubmit}>

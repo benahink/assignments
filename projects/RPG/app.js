@@ -1,11 +1,15 @@
 let readline = require('readline-sync')
 
 console.log(`
-Music is EVERYTHING! And the  has consipired to influence our taste with TERRIBLE music`)
+Music is EVERYTHING! And the "" has conspired to influence our taste with TERRIBLE music`)
 
-let playerName = readline.question("What is your name? ")
+let playerName = readline.question("What is your name? ");
 
-let action = readline.keyIn(`press [w] to walk: `, {limit: 'w'})
+console.log('Nice to meet you ' + playerName + "!");
+console.log('Lets begin the game.')
+
+let action = readline.keyIn(`press [w] to walk: 
+press [x] to exit`, {limit: 'wx'})
 
 const playerProperties = {
     name: playerName, 
@@ -32,6 +36,7 @@ const enemyProperties = {
     influencePower: Math.floor(Math.random() * 20) + 1
 }
 
+
 function Enemy (name, hp, num, arr) {
     this.badMusic = name;
     this.influencePoints = hp;
@@ -44,7 +49,7 @@ function playList() {
 }
 
 function addToPlayList() {
-    let newItem = readline.question(`You won the fight and discoverd a new artsit to add to your great playlist.`)
+    let newItem = readline.question(`You won the fight and discoverd a new artsit to add to your playlist.`)
     newItem.push(playerProperties.playList)
 }
 
@@ -53,7 +58,7 @@ while (!playerProperties.hasWon && playerProperties.isAlive) {
         `what's your next move? 
          press [w] to walk
          press [i] for inventory
-         press [x] to exit game `, {limit: 'wxi'})
+         press [x] to exit game`, {limit: 'wxi'})
     if(nextMove === "w") {
         walk()
     } else if (nextMove === "i") {

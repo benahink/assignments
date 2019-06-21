@@ -1,46 +1,29 @@
-// const newArr = (arr) => {
-//     let otherAnimals = [...arr, 'dog', 'cat', 'mouse']
-//     return otherAnimals
+// function myFunc(...items){
+//     let myArr = items;
+//     return myArr;
 // }
-// console.log(newArr(['tiger', 'jaguar', 'lion', 'cheetah']))
-
-// function myFunction(...items){ 
-//     let item = ['flat', 'condo', 'apartment', 'house', 'mansion']
-//     return item
-// };
-// console.log(myFunction())
-
-// function myFunction(items){ 
-//     let item = [...items]
-//     // item.pop()
-//     return item.push(["ModalA"])
-// };
-// console.log(myFunction(['flat', 'condo', 'apartment', 'house', 'mansion']))
-
-// import React from 'react'
+// console.log(myFunc(1, 2, 3, 4, 5))
+// import React from 'react';
 
 // const App = () => {
-//     <>
-//         <h1>Hello World</h1>
-//     </>
+//     return (
+//         <>
+//             <h1>Name: { props.name } </h1>
+//             <p>Age: { props.age } </p>
+//         </>
+//     )
 // }
 
 // export default App
 
-// function Person(firstName, lastName, age) {
-//     this.firstName = firstName;
-//     this.lastName = lastName;
-//     this.age = age;
-//     this.talk = () => {
-//         console.log("hello, I am person")
-//     }
-//     this.walk = () => {
-//         console.log('this person has two legs')
-//     }
-// }
+// const arr = [ 2, 5, 3, 3, 35, 38 ];
+// const addSub10 = arr.map( num => {
+//     if(num <= 10){
+//         return num += 10
+//      } else {
+//         return num -= 10
+//      }
 
-// function add (a,b) {
-//     return b+a
-// }
+// })
 
-// console.log(add(1,4))
+// console.log( addSub10 )

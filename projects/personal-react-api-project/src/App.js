@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from './navbar/Navbar.js';
 import { Switch, Route } from 'react-router-dom';
-import "./App.css"
+import Footer from './footer/Footer.js';
+import "./App.css";
 
 import Home from './navbar/Home.js';
 import TopRecipes from './navbar/TopRecipes.js';
@@ -17,6 +18,7 @@ class App  extends Component {
                     <Route path='/top-recipes' component={TopRecipes}/>
                     <Route path='/my-favorites' component={MyFav}/>
                 </Switch>
+                <Footer />
             </div>
         )
     }

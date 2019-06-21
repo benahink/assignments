@@ -8,13 +8,14 @@ class Projects extends Component {
     }
 
     render() { 
+
         return ( 
             <div className="projects-container">
                 <h1>Projects: </h1>
                 <div className="projects">
                     <ProjectsCard />
-                    <ProjectsCard />
-                    <ProjectsCard />
+                    {/* <ProjectsCard />
+                    <ProjectsCard /> */}
                 </div>
             </div>
          );

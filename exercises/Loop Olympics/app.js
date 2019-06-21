@@ -95,14 +95,14 @@
 // console.log(occupationArray)
 
 // Gold #1
-// const arr = []
-// for (let i = 0; i < 3; i++) {
-//     arr.push([])
-//     for (let j = 0; j < 3; j++) {
-//        arr[i].push(0)
-//     }
-// }
-// console.log(arr)
+const arr = []
+for (let i = 0; i < 3; i++) {
+    arr.push([])
+    for (let j = 0; j < 3; j++) {
+       arr[i].push(0)
+    }
+}
+console.log(arr)
 
 // Gold #2
 // const arr = []

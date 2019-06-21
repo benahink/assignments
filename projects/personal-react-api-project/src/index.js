@@ -4,7 +4,6 @@ import App from "./App";
 import GlobalProvider from './GlobalProvider';
 import { BrowserRouter } from 'react-router-dom'
 
-
 ReactDOM.render(
 <GlobalProvider>
     <BrowserRouter>

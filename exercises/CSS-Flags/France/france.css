@@ -14,8 +14,8 @@
 
 .box {
     display: inline-block;
-    height: 386px;
-    width: 580px;
+    height: 100%;
+    width: 100%;
     border: 1px lightblue solid;
 }
 

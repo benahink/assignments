@@ -21,6 +21,7 @@ class RecipeCard extends Component {
             this.setState({isChecked: false})
             this.props.removeLiked(recipe)
         }
+        // localStorage.setItem("likedRecipes", JSON.stringify(this.props.likedRecipes))
     }
     
     render() { 

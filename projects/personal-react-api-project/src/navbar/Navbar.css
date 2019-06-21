@@ -1,15 +1,15 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 .navbar {
     display: grid;
-    grid-template-columns: 375px 80px 140px 150px;
+    grid-template-columns: 400px 80px 140px 150px;
     align-items: center;
-    padding: 10px;
-    width: 97vw;
-    height: 15vh;
-    background: #F6F8E8;
+    padding: 5px;
+    width: auto;
+    height: auto;
 }
 
 .navbar > a {
@@ -18,14 +18,13 @@
     padding: 5px;
 }
 
-.navbar > a:focus {
+.navbar > a:hover {
     display: flex;
     height: 50px;
-    background-color: hsl(3, 86%, 54%, 0.5);
+    color: #ee2e24;
 }
 
 #header {
-    background: #F6F8E8;
     height: 100px;
     font-family: 'Pacifico', cursive;
     font-size: 50px;
@@ -33,7 +32,7 @@
 
 .bar {
     height: 10px;
-    background: #EF2E25;
+    background: black;
 }
 
 .my-fav {
@@ -43,22 +42,10 @@
     height: auto;
 }
 
-.footer {
-    font-size: 20px;
-}
-
-/* @media screen and (min-width: 680px) {
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        height: 25vh;
-    }
-} */
-
 @media screen and (min-width: 1024px) {
     .navbar {
         display: grid;
-        grid-template-columns: 650px 100px 175px 180px;;
+        grid-template-columns: 600px 100px 175px 180px;;
         align-items: center;
     }
 
@@ -73,6 +60,6 @@
     .navbar {
         display: flex;
         flex-direction: column;
-        height: 30vh;
+        height: 250px;
     }
   }

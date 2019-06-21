@@ -3,7 +3,6 @@
 }
 
 .about-container {
-    /* border: purple 2px solid; */
     height: auto;
     padding: 30px;
 }
@@ -20,13 +19,13 @@
     flex-wrap: wrap;
     font-size: 20px;
     width: 100%;
-    color: #ffffff;
-    padding: 5px;
+    color: #FAF9E6;
+    border: #650E3B 1px solid;
 }
 
 .contact-me {
     width: 50%;
-    background: #D291BC;
+    background: #ED7D39;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +43,7 @@
 
 .my-photos {
     width: 50%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 

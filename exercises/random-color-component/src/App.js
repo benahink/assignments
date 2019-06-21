@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Axios from "axios";
-import "./App.css"
+import "./App.css";
 
 class App extends Component {
     constructor() {
@@ -21,7 +21,6 @@ class App extends Component {
             )
         })
     }
-
     
     handleClick = () => {
         let randNum = Math.floor(Math.random() * 163);

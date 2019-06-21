@@ -26,32 +26,71 @@ h1 {
 }
 
 .card-container {
-    background: #D291BC;
+    background: #CED8F7;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 20px;
-    color: #ffffff;
+    color: #002082;
     flex-grow: 3;
     width: 48%;
     padding: 5px;
+    border: #002082 1px solid;
 }
 
-.card-container > h3 {
-    font-size: 50px;
+#aTagLink {
+    font-size: 40px;
     size: 100px;
     padding: 50px;
+    color: #002082;
+}
+
+#aTagLink:hover {
+    font-size: 45pt;
+    transition: transform 1000ms;
 }
 
 .card-container > .description {
     width: 300px;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     padding: 50px;
 }
 
-.card-container:first-child {
-    background:#7B919E;
+.card-container:nth-child(3n) {
+    background: #ffffff;
     flex-grow: 3;
     width: 100%;
-  }
+}
+
+.someColor {
+    width: 100%;
+    height: 60px;
+    background: #002082;
+}
+
+@media screen and (max-width: 760px) {
+    .projects {
+        display: flex;
+        flex-wrap: row;
+        justify-content: space-between;
+        height: auto;
+        width: 100%;
+    }
+
+    .card-container {
+        background: #4A6DE5;
+        font-size: 10px;
+        color: #ffffff;
+        flex-grow: 3;
+        width: 48%;
+        padding: 5px;
+    }
+
+    .card-container:nth-child(3n) {
+        color: #4A6DE5;
+        background: #CED8F7;
+        flex-grow: 3;
+        width: 100%;
+    }
+}

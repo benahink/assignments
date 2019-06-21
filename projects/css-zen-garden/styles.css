@@ -37,10 +37,20 @@ body {
     border-top: 10px #325050 solid;
 }
 
+.header h1 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 27px;
+    margin-top: 65px;
+    margin-right: 231px
+}
+
 
 #circle {
-    width: 50px;
-    float: center;
+    width: 80px;
+    float: left;
+    opacity: 0.6;
+    margin-top: 35px;
+    margin-left: 200px;
 }
 
 .navigation {
@@ -55,16 +65,16 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    opacity: 0.2;
+    background: rgb(255, 255, 255, 0.2);
 }
 
-#arrow-view {
+#view {
     font-size: 12px;
     color: white;
 }
 
 #arrow-left, #arrow-right {
-    font-size: 40px;
+    font-size: 75px;
     color: white; 
 }
 
@@ -80,6 +90,10 @@ body {
 #beauty, .footer {
     font-size: 12px;
     font-style: italic;
+}
+
+#beauty {
+    margin-right: 220px
 }
 
 .about{
@@ -120,10 +134,10 @@ body {
     background: #134347;
     height: 100px;
     text-align: center;
+    font-family: 'verdemoderna';
 }
 
 .social-media > a {
-    font-family: 'verdemoderna';
     color: #ffff;
 }
 
@@ -209,6 +223,10 @@ a {
     width: 100%;
 }
 
+.links > li:last-child {
+    border: none;
+}
+
 h1 {
     font-family: "Julius Sans One", sans-serif;
     font-size: 21px;
@@ -228,7 +246,7 @@ h4 {
     font-style: italic;
 }
 
-@media screen and (min-width: 1130px) {
+@media screen and (min-width: 1000px) {
     body {
         grid-template:
         "header nav" 18vh

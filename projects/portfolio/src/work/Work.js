@@ -13,8 +13,6 @@ class Work extends Component {
                 <h1>Work: </h1>
                 <div className="work">
                     <WorkCard />
-                    <WorkCard />
-                    <WorkCard />
                 </div>
             </div>
          );

@@ -82,7 +82,7 @@ a:hover {
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    background: rgb(255, 192, 203, 0.9);
+    background: #4A6DE5;
     list-style-type: none;
     /* -webkit-font-smoothing: antialiased;   */
     transform: translate(-100%, 0);
@@ -104,7 +104,7 @@ a:hover {
     height: 600px;
     background-size: cover;
     position: relative;
-    left: 210px;
+    left: 25%;
     top: 40px;
 }
 

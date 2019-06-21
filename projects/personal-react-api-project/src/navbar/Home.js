@@ -23,11 +23,6 @@ const Home = () => {
                     <div className="fifthPic" style={{backgroundImage:`url("https://images.unsplash.com/photo-1503810473512-f64b56827964?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")`}}></div>
                     <div className="sixthPic" style={{backgroundImage:`url("https://images.unsplash.com/photo-1548370003-c17e7f080a06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")`}}></div>
                 </div>
-                <div className="footer">
-                    <p>Posted by: Beni Kur</p>
-                    <p>To see the full code, please visit <a href="https://github.com/benahink/assignments/tree/master/projects/personal-react-api-project">
-                    GitHub</a>.</p>
-                </div>
             </div>
         </div>
     );

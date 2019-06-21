@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
+.article{
+    display: flex;
+}
+
 .inline{
-    display: inline-block;
     width: 33%;    
     height: 100%;
 }
-
 
 .container {
     height: auto;
@@ -17,7 +19,6 @@
     background: lightgray;
     padding: 35px;
 }
-
 
 .title {
     border-bottom: 5px black double;
