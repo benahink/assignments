@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300|Permanent+Marker&display=swap');
 
 .projects-container {
-    /* border: rgb(212, 182, 212) 2px solid; */
     height: auto;
     padding: 30px;
 }
@@ -57,11 +56,11 @@ h1 {
     padding: 50px;
 }
 
-.card-container:nth-child(3n) {
+/* .card-container:nth-child(3n) {
     background: #ffffff;
     flex-grow: 3;
     width: 100%;
-}
+} */
 
 .someColor {
     width: 100%;

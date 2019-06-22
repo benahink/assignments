@@ -2,13 +2,6 @@ import React, { Component } from 'react';
 import Blue from '../image/dark-light-blue.jpeg';
 
 class ProjectsCard extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        
-        }
-    }
-
     render() { 
         return ( 
             <>
@@ -17,7 +10,7 @@ class ProjectsCard extends Component {
                         id="aTagLink"><h3>Recipe App</h3></a>
                     <p>__________</p>
                     <br/>
-                    <p className="description">I built a recipe app using React Native.</p>
+                    <p className="description">I built a recipe app using React.js and Edamam API.</p>
                 </div>
                 <div className="card-container two">
                 <a href="" id="aTagLink"><h3>CSS Zen Garden</h3></a>
