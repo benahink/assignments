@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Footer from './footer/Footer.js';
 import "./App.css";
 
-import Home from './navbar/Home.js';
+import Home from './login-signup/HomePage.js';
 import TopRecipes from './navbar/TopRecipes.js';
 import MyFav from './navbar/MyFav.js';
 
