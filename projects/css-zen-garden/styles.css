@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'verdemoderna';
-    font-style: 'normal';
+    /* font-style: 'normal'; */
     src: url('http://www.csszengarden.com/214/verdemoderna.woff') format('woff');
 }
 
@@ -20,7 +20,7 @@ body {
     letter-spacing: normal;
     word-spacing: 0px;
     text-align: start;
-    text-indent: 0px;
+    text-indent: 0px
     font-size: 10px;
 }
 
