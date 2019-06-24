@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    border: 0;
 }
 
 .app-container {
@@ -8,3 +9,4 @@
     height: auto;
     background: #f8f8f8;
 }
+

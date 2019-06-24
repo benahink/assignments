@@ -3,15 +3,12 @@ import './Work.css';
 import WorkCard from "./WorkCard.js"
 
 class Work extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() { 
         return ( 
-            <div className="work-container">
+            <div className="works-container">
                 <h1>Work: </h1>
-                <div className="work">
+                <div className="works">
                     <WorkCard />
                 </div>
             </div>

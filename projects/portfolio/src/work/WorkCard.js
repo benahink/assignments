@@ -12,27 +12,32 @@ class WorkCard extends Component {
 
     render() { 
         return ( 
-            <>
-                <div className="workcard-container">
+            <div className="work-container">
+                <div className="workcard-container one">
                 <a href="" id="workATagLink"><h3>Responsive CSS Grid</h3></a>
                     <p>__________</p>
                     <br/>
                     <p className="description">Project Description: This is where I describe what the project is about</p>
                 </div>
-                <div className="workcard-container">
+                <div className="workcard-container two">
                 <a href="" id="workATagLink"><h3>Recipe App</h3></a>
                     <p>__________</p>
                     <br/>
                     <p className="description">Project Description: This is where I describe what the project is about</p>
                 </div>
-                <div className="workcard-container">
+                <div className="workcard-container three">
                 <a href="" id="workATagLink"><h3>Recipe App</h3></a>
                     <p>__________</p>
                     <br/>
                     <p className="description">Project Description: This is where I describe what the project is about</p>
                 </div>
-                <div className="someColorWork" style={{backgroundImage:`url(${Purple})`}}></div>
-            </>
+                <div className="workcard-container four">
+                <a href="" id="workATagLink"><h3>Recipe App</h3></a>
+                    <p>__________</p>
+                    <br/>
+                    <p className="description">Project Description: This is where I describe what the project is about</p>
+                </div>
+            </div>
         );
     }
 }
