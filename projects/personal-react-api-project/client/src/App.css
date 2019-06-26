@@ -10,8 +10,7 @@ body {
     padding: 0;
 }
 
-
-.container {
+.app-container {
     background:#FBFBFB;
     width: 100vw;
 }
