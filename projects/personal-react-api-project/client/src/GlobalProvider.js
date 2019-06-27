@@ -11,15 +11,17 @@ class GlobalProvider extends Component {
             filtering: false,
             searchInput: '',
             liked: false,
-            likedRecipes: []
+            likedRecipes: [], 
+            recipes: [], 
+            users: {}, 
+            token: ""
         }
     }
 
     componentDidMount(){
-        // this.setState({recipesArr: recipes.recipes})
         const app_key = 'e250bb76cf85354c8322f287686a2323';
         const app_id = '9ed8e16e';
-        const URL = `https://api.edamam.com/search?q=&to=42&app_id=${app_id}&app_key=${app_key}`;
+        const URL = `https://api.edamam.com/search?q=&to=5&app_id=${app_id}&app_key=${app_key}`;
         Axios.get(URL).then(response => {
             this.setState({recipesArr: response.data.hits})
         })
@@ -44,7 +46,7 @@ class GlobalProvider extends Component {
         )
     }
 
-    handleChange = (event) => {
+    handleChange = event => {
         let { value, name } = event.target
         if(value === ''){
             this.setState({
@@ -62,6 +64,16 @@ class GlobalProvider extends Component {
         }
     }
 
+    signup = async userInfo => {
+        const response = await Axios.post("/auth/signup", userInfo);
+        const { users, token } = response.data;
+        this.setState({
+            users,
+            token
+        });
+        return response;
+    }
+
     render() { 
         const props = {
             handleChange: this.handleChange, 
@@ -69,6 +81,7 @@ class GlobalProvider extends Component {
             addLiked: this.addLiked,
             removeLiked: this.removeLiked,
             createFavList: this.createFavList,
+            signup: this.signup,
             ...this.state
         }
 

@@ -20,10 +20,11 @@ class SignIn extends Component {
         })
     }
 
-    handleSubmit = (e) => {
-        e.preventDefault;
-        
-    }
+    // handleSubmit = (e) => {
+    //     e.preventDefault;
+    //     this.props.signup(this.state)
+    //     .then(() => this.props.history.push("/todos"))
+    // }
 
     render() { 
         console.log(this.state.email)
