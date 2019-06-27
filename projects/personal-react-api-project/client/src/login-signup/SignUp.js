@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { withProvider } from "../GlobalProvider.js";
 import './Login.css';
 
-class SingUp extends Component {
+class SignUp extends Component {
     constructor(props) {
         super(props);
         this.state = { 
@@ -27,7 +27,7 @@ class SingUp extends Component {
         event.preventDefault();
         console.log(this.props);
         this.props.signup(this.state)
-            .then(() => this.props.history.push("/recipes"));
+            .then(() => this.props.history.push("/home"));
     }
 
     render() { 
@@ -73,4 +73,4 @@ class SingUp extends Component {
     }
 }
  
-export default withProvider(SingUp);
+export default withProvider(SignUp);

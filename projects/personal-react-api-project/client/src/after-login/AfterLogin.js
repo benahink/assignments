@@ -1,22 +1,21 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Footer from './footer/Footer.js';
-import Navbar from './navbar/Navbar.js';
-import TopRecipes from './navbar/TopRecipes.js';
-import MyFav from './navbar/MyFav.js';
-import Recipe from './recipe/Recipe.js';
+import Footer from '../footer/Footer.js';
+import Navbar from '../navbar/Navbar.js';
+
+import TopRecipes from '../navbar/TopRecipes.js';
+import MyFav from '../navbar/MyFav.js';
 
 const AfterLogin = () => {
     return ( 
-        <>
+        <div>
             <Navbar />
-            <Switch>
-                <Route exact path='/' component={TopRecipes}/>
-                <Route path="/recipes" component={Recipe}/>
-                <Route path='/my-favorites' component={MyFav}/>
-            </Switch>
+                <Switch>
+                    <Route path='/top-recipes' component={TopRecipes}/>
+                    <Route path='/my-favorites' component={MyFav}/>
+                </Switch>
             <Footer />
-        </>
+        </div>
     );
 };
  

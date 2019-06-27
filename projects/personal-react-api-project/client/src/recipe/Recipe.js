@@ -4,12 +4,6 @@ import { withProvider } from "../GlobalProvider";
 import RecipeCard from '../recipe/RecipeCard.js';
 
 class Recipe extends Component {
-    constructor() {
-        super()
-        this.state = {
-
-        }
-    }
     render() { 
         const { filtering, recipesArr, filteredRecipes } = this.props;
         let recipesToMap = filtering ? filteredRecipes : recipesArr;
@@ -26,7 +20,7 @@ class Recipe extends Component {
                                 placeholder="Search"
                                 name="searchInput" 
                                 id="search"
-                                value={this.state.value}
+                                value={this.props.value}
                                 onChange={this.props.handleChange}/>
                     </form>
                 </div>
