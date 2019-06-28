@@ -13,19 +13,19 @@ class GlobalProvider extends Component {
             liked: false,
             likedRecipes: [], 
             recipes: [], 
-            users: {}, 
-            token: ""
+            users: JSON.parse(localStorage.getItem("user")) || {}, 
+            token: localStorage.getItem("token") || ""
         }
     }
 
-    componentDidMount(){
-        const app_key = 'e250bb76cf85354c8322f287686a2323';
-        const app_id = '9ed8e16e';
-        const URL = `https://api.edamam.com/search?q=&to=5&app_id=${app_id}&app_key=${app_key}`;
-        // Axios.get(URL).then(response => {
-        //     this.setState({recipesArr: response.data.hits})
-        // })
-    }
+    // componentDidMount(){
+    //     const app_key = 'e250bb76cf85354c8322f287686a2323';
+    //     const app_id = '9ed8e16e';
+    //     const URL = `https://api.edamam.com/search?q=&to=5&app_id=${app_id}&app_key=${app_key}`;
+    //     Axios.get(URL).then(response => {
+    //         this.setState({recipesArr: response.data.hits})
+    //     })
+    // }
 
     addLiked = (recipe) => {
         this.setState(prevState => {
@@ -67,11 +67,46 @@ class GlobalProvider extends Component {
     signup = async userInfo => {
         const response = await Axios.post("/auth/signup", userInfo);
         const { users, token } = response.data;
+        localStorage.setItem("token", token);
+        localStorage.setItem("user", JSON.stringify(userInfo));
         this.setState({
             users,
             token
         });
         return response;
+    }
+
+    login = (credentials) => {
+        return Axios.post("/auth/login", credentials)
+        .then(response => {
+            let { token, user } = response.data;
+            localStorage.setItem("user", JSON.stringify(user));
+            localStorage.setItem("token", token);
+            this.setState({
+                users: user,
+                token
+            })
+            // this.getLikedRecipes();
+            return response;
+        })
+    }
+
+    getLikedRecipes = () => {
+        return Axios.get("/api/recipe")
+        .then(response => {
+            this.setState({likedRecipes: response.data})
+            return response;
+        })
+    }
+
+    logout = () => {
+        localStorage.removeItem("token");
+        localStorage.removeItem("user");
+        this.setState({
+            users: {}, 
+            token: ""
+        })
+        this.state.history.push("/login");
     }
 
     render() { 
@@ -82,6 +117,8 @@ class GlobalProvider extends Component {
             removeLiked: this.removeLiked,
             createFavList: this.createFavList,
             signup: this.signup,
+            login: this.login,
+            logout: this.logout,
             ...this.state
         }
 

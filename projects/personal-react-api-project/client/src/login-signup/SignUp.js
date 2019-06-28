@@ -25,7 +25,7 @@ class SignUp extends Component {
 
     handleSubmit = event => {
         event.preventDefault();
-        console.log(this.props);
+        console.log(this.props.history);
         this.props.signup(this.state)
             .then(() => this.props.history.push("/home"));
     }
@@ -65,7 +65,7 @@ class SignUp extends Component {
                     </div>
                     <div className="FormField">
                         <button className="FormField__Button mr-20">Sign Up</button>
-                        <Link to="/sign-in" className="FormTitle__Link">I'm already a member</Link>
+                        <Link to="/signin" className="FormTitle__Link">I'm already a member</Link>
                     </div>
                 </form>
             </div>

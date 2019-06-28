@@ -1,30 +1,26 @@
 import React from 'react';
+import { BrowserRouter, Route, NavLink } from 'react-router-dom';
+import Logout from "../logout/Logout.js";
 import './Home.css';
 import './Navbar.css';
 
-const Home = () => {
+const Home = (props) => {
     return (
-        <div className="home-container">
-            <div className="row">
-                <div className="span1">
-                    <img src="../images/pots.jpeg" alt=""/> 
-                </div>
-                <p className="span2">
-                    Cooking is like painting or writing a song. Just as there are only so many notes or colors, there are only so many flavors - it's how you combine them that sets you apart. 
-                    <br/> 
-                    <br/>
-                    -Wolfgang Puck
-                </p>
-                <div className="photos">
-                    <div className="firstPic" style={{backgroundImage:`url("https://images.unsplash.com/photo-1548370003-c17e7f080a06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")`}}></div>
-                    <div className="secPic" style={{backgroundImage:`url("https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")`}}></div>
-                    <div className="thirdtPic" style={{backgroundImage:`url("https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")`}}></div>
-                    <div className="fourthPic" style={{backgroundImage:`url("https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")`}}></div>
-                    <div className="fifthPic" style={{backgroundImage:`url("https://images.unsplash.com/photo-1503810473512-f64b56827964?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")`}}></div>
-                    <div className="sixthPic" style={{backgroundImage:`url("https://images.unsplash.com/photo-1548370003-c17e7f080a06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")`}}></div>
-                </div>
+       <div className="App">
+                <div className="App__Form">
+                    <div className="PageSwitcher">
+                        <NavLink to="/signin" 
+                                activeClassName="PageSwitcher__Item--Active"
+                                className="PageSwitcher__Item">My Favorites</NavLink>
+                        <NavLink exact to="/" 
+                                activeClassName="PageSwitcher__Item--Active"
+                                className="PageSwitcher__Item">Logout</NavLink>
+                    </div>
+                    {/* <Route exact path="/" component={SignUp}></Route> */}
+                    <Route path="/" component={Logout}></Route> 
+                </div>  
+                <div className="App__Aside"></div>
             </div>
-        </div>
     );
 }
  

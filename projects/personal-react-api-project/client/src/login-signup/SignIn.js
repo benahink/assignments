@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { withProvider } from '../GlobalProvider.js'
 
 class SignIn extends Component {
     constructor(props) {
@@ -10,8 +11,8 @@ class SignIn extends Component {
         }
     }
 
-    handleChange = (e) => {
-        const target = e.target;
+    handleChange = (event) => {
+        const target = event.target;
         const value = target.value;
         const name = target.name;
 
@@ -20,18 +21,16 @@ class SignIn extends Component {
         })
     }
 
-    // handleSubmit = (e) => {
-    //     e.preventDefault;
-    //     this.props.signup(this.state)
-    //     .then(() => this.props.history.push("/todos"))
-    // }
+    handleSubmit = (event) => {
+        // event.preventDefault();
+        this.props.login(this.state)
+        .then(() => this.props.history.push("/home"))
+    }
 
     render() { 
-        console.log(this.state.email)
-        console.log(this.state.password)
         return ( 
             <div className="FormCenter">
-                <form className="FormFields" onSubmit={this.handlesubmit}>
+                <form className="FormFields" onSubmit={this.handleSubmit}>
                 <div className="FormField">
                         <label  htmlFor="email" className="FormField__Label">E-mail Address</label>
                         <input  type="email" 
@@ -63,4 +62,4 @@ class SignIn extends Component {
     }
 }
  
-export default SignIn;
+export default withProvider(SignIn);

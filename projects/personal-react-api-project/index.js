@@ -24,7 +24,6 @@ app.use("/auth", require("./routes/auth"));
 app.use("/api", expressJwt({secret: secret}));
 app.use("/api/recipe", require("./routes/recipe"));
 
-
 app.use((err, request, response, next) => {
     console.error(err);
     if(err.name === 'UnauthorizedError') {

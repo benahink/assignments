@@ -37,7 +37,13 @@ header {
 
 #container {
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-column-gap: 15px;
     padding: 15px
+}
+
+.todoBox {
+    display: flex;
+    flex-direction: column;
+
 }

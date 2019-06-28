@@ -6,7 +6,8 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
 
 .footer-container {
-    background: black;
+    background: #2E4158;
+    border: white 1px solid;
     font-size: 15px;
     height: auto;
     padding: 10px 15px;

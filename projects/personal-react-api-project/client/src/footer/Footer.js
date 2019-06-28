@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import burgers from '../images/food_blues.jpeg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
     faFacebook, 
@@ -45,10 +44,10 @@ export default function Footer() {
                     <h3>000-000-0000</h3>
                 </a>
             </div>
-            <div 
+            {/* <div 
                 className="someColor" 
                 style={{backgroundImage: `url(${burgers})`}}>
-            </div>
+            </div> */}
         </>
     )
 }
