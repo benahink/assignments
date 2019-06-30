@@ -3,6 +3,22 @@
     padding: 0;
 }
 
+.aui-avatar .custom-presence-indicator {
+    /* position the indicator. AUI Avatars are a relative container. */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* size the indicator appropriately. content should not appear outside the indicator. */
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    /* style the indicator. */
+    color: #00875A;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    fill: #00875A;
+}
+
 .app-name {
     height: 100px;
     font-family: 'Pacifico', cursive;
@@ -15,6 +31,7 @@
     height: 100vh;
     display: flex;
     color: white;
+    border: 1px solid rgb(201, 201, 201);
 }
 
 .App__Aside {
