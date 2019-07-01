@@ -21,14 +21,14 @@
 
 .bar {
     height: 10px;
-    background: #2E4158;
+    background:  #163832;
 }
 
 .app-name {
     height: 100px;
     font-family: 'Pacifico', cursive;
     font-size: 50px;
-    color: #2E4158;
+    color:  #163832;
     padding-left: 10px;
     padding-top: 10px;
 }
