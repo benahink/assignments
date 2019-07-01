@@ -39,13 +39,6 @@
     align-content: right;
 }
 
-.ui.header.avatar {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    margin-top: 30px;
-}
-
 @media screen and (min-width: 1024px) {
     .navbar {
         display: grid;
