@@ -1,0 +1,53 @@
+.modal {
+  font-size: 15px;
+  width: auto;
+  height: 650px;
+  overflow: scroll;
+}
+
+.button {
+  color: #eb8282;
+  font-size: 20px;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #eb8282; 
+  color: white;
+}
+
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 25px;
+  color: #eb8282;
+  text-align: center;
+  padding: 5px;
+}
+
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.modal > .ingredients {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+}
+
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+
+.footer-container {
+    background: #2E4158;
+    border: white 1px solid;
+    font-size: 15px;
+    height: auto;
+    padding: 10px 15px;
+    font-family: 'Arvo', serif;
+}
+
+.footer-container > h2 {
+    color: #ffffff;
+    margin: 23px;
+    font-size: 20px;
+}
+
+a.footer {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 23px;
+}
+
+a.footer:hover {
+    color: tomato;
+}
+
+a.footer > h3 {
+    margin-left: 23px;
+}
+
+.email > h3 {
+    margin-top: 15px;
+}
+
+.someColor {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
