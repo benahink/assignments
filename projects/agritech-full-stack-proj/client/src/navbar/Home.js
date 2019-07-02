@@ -12,17 +12,17 @@ const Home = (props) => {
         <>
             <div className="App">
                 <div className="App__Form">
-                            <div className="PageSwitcher">
-                                <NavLink to="/newsfeed" 
-                                        activeClassName="PageSwitcher__Item--Active"
-                                        className="PageSwitcher__Item">Messages</NavLink>
-                                <NavLink to="/newsfeed" 
-                                        activeClassName="PageSwitcher__Item--Active"
-                                        className="PageSwitcher__Item">Messages</NavLink>
-                                <NavLink exact to="/" 
-                                        activeClassName="PageSwitcher__Item--Active"
-                                        className="PageSwitcher__Item">Logout</NavLink>
-                            </div>
+                    <div className="PageSwitcher">
+                        <NavLink to="/newsfeed" 
+                                activeClassName="PageSwitcher__Item--Active"
+                                className="PageSwitcher__Item">Messages</NavLink>
+                        <NavLink to="/newsfeed" 
+                                activeClassName="PageSwitcher__Item--Active"
+                                className="PageSwitcher__Item">Messages</NavLink>
+                        <NavLink exact to="/" 
+                                activeClassName="PageSwitcher__Item--Active"
+                                className="PageSwitcher__Item">Logout</NavLink>
+                    </div>
                     <Messages />
                     {/* <Route exact path="/" component={SignUp}></Route> */}
                     <Route path="/" component={Logout}></Route> 
@@ -36,7 +36,7 @@ const Home = (props) => {
                 </div>
             </div>
         </>
-);
+    );
 }
  
 export default Home;

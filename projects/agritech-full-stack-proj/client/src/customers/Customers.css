@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+.Customer_Card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+}
+
+.ui.card:first-child {
+    /* margin-top: 10px; */
+    margin: 10px;
+}
+
+.ui.card {
+    margin-top: 30px;
+    margin: 10px;
+}
+
+.ui.card:last-child {
+    /* margin-top: 10px; */
+    margin: 10px;
+}

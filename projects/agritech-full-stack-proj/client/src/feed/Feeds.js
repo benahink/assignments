@@ -25,7 +25,7 @@ const Feeds = () => (
         </Feed.Event>
 
         <Feed.Event>
-            <Feed.Label image='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' />
+            <Feed.Label image='https://react.semantic-ui.com/images/avatar/small/helen.jpg' />
             <Feed.Content>
                 <Feed.Summary>
                     <a href="#">Helen Troy</a> added <a href="#">2 new illustrations</a>
@@ -49,7 +49,7 @@ const Feeds = () => (
         </Feed.Event>
 
         <Feed.Event>
-            <Feed.Label image='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' />
+            <Feed.Label image='https://react.semantic-ui.com/images/avatar/small/molly.png' />
             <Feed.Content>
                 <Feed.Summary date='2 Days Ago' user='Jenny Hess' content='add you as a friend' />
                 <Feed.Meta>
@@ -62,7 +62,7 @@ const Feeds = () => (
         </Feed.Event>
 
         <Feed.Event>
-            <Feed.Label image='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' />
+            <Feed.Label image='https://react.semantic-ui.com/images/avatar/small/matthew.png' />
             <Feed.Content>
                     <Feed.Summary>
                         <a href="#">Joe Henderson</a> posted on his page
@@ -83,7 +83,7 @@ const Feeds = () => (
         </Feed.Event>
 
         <Feed.Event>
-            <Feed.Label image='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' />
+            <Feed.Label image='https://react.semantic-ui.com/images/avatar/small/joe.jpg' />
             <Feed.Content>
                 <Feed.Summary>
                     <a href="#">Justen Kitsune</a> added <a href="#">2 new photos</a> of you
