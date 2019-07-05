@@ -7,7 +7,11 @@ import Navbar from '../navbar/Navbar.js';
 import Footer from '../footer/Footer.js';
 import Customers from '../customers/Customers';
 import Merchants from '../merchants/Merchants';
+<<<<<<< HEAD
 import HomePage from "../login-signup/HomePage.js"
+=======
+// import HomePage from "../login-signup/HomePage.js"
+>>>>>>> 9154b0b8d7378fb706475d0b8ec4e4260c0f5aa1
 
 const Routes = () => {
     return (
