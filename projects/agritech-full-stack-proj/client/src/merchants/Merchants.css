@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+.Merchant_Card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ui.card:first-child {
+    /* margin-top: 10px; */
+    margin: 10px;
+}
+
+.ui.card {
+    margin-top: 30px;
+    margin: 10px;
+}
+
+.ui.card:last-child {
+    /* margin-top: 10px; */
+    margin: 10px;
+}

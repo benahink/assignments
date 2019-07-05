@@ -11,20 +11,28 @@ class SignIn extends Component {
         }
     }
 
-    handleChange = (event) => {
-        const target = event.target;
-        const value = target.value;
-        const name = target.name;
+    validateForm() {
+        return this.state.email.length > 0 && this.state.password.length > 0;
+    }
 
-        this.setState ({
+    handleChange = (e) => {
+        const { name, value } = e.target
+        this.setState({
             [name]: value
         })
     }
 
-    handleSubmit = (event) => {
-        // event.preventDefault();
+    clearInputs = () => {
+        this.setState({
+            email: "",
+            password: ""
+        })
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault();
         this.props.login(this.state)
-        .then(() => this.props.history.push("/myprofile"))
+            .then(() => this.props.history.push("/myprofile"))
     }
 
     render() { 

@@ -1,14 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withProvider } from '../GlobalProvider.js';
 import './HamburgerMenu.css';
-import './Navbar.css';
 
-const Navbar = (props) => {
-    return (
-        <>
-            <div className="bar"></div>
-            <div className="header">
+class HamburgerMenu extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { 
+
+        }
+    }
+
+    openNav = () => {
+        document.getElementById("myNav").style.width = "100%";
+    }
+      
+    closeNav = () => {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+    render(props) { 
+        return ( 
+            <>
                 <nav role="navigation">
                     <div id="menuToggle">
                         <input type="checkbox" />
@@ -19,17 +32,16 @@ const Navbar = (props) => {
                             <h2>YOUR NAME</h2>
                             <h3>_____________</h3>
                             <li><Link to="/myprofile">Account</Link></li>
-                            <li><Link to="/customer">Customers</Link></li>
-                            <li><Link to="/merchant">Merchants</Link></li>
+                            <li><Link to="/customers">Customers</Link></li>
+                            <li><Link to="/merchants">Merchants</Link></li>
                             <li><Link to="/newsfeed">Feed</Link></li>
                             {/* <Link exact to="/" onClick={props.logout}>Logout</Link> */}
                         </ul>
                     </div>
-                </nav> 
-                <h1 className="app-name">Farming Medium</h1>
-            </div>
-        </>
-    )
+                </nav>              
+            </>
+        )
+    }
 }
-
-export default withProvider(Navbar);
+ 
+export default withProvider(HamburgerMenu);
