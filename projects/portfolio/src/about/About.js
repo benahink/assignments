@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Yellow from '../image/yellow-paint-splash.jpeg'
-import Red from '../image/beautiful-pattern.jpeg'
 import './About.css';
 
 class About extends Component {
@@ -19,13 +17,13 @@ class About extends Component {
                     <div className="contact-me">
                         <h3>benahink@gmail.com</h3>
                         <p>__________</p>
-                        <br/>
-                        <p className="about-me">I am a full-stack developer based in Salt Lake City, UT. My skills include front-end development, and back-end development. 
+    
+                        <p className="about-me">I am a full-stack developer based in Salt Lake City, UT. My skills include front-end and back-end development. 
                             I love minimalistic design and enjoy building/creating apps that are practical, enjoyable and user friendly.
+                            <br/><br/> As a full stack developer, I am constantly learning about Web App Development and Software Engineering through online courses, training, books and meet ups.
                         </p>
                     </div>
-                    <div className="my-photos" style={{backgroundImage: `url(${Yellow})`}}></div>
-                    <div className="someColorWork" style={{backgroundImage:`url(${Red})`}}></div>
+                    <div className="contact-me_image">image here</div>
                 </div>
             </div>
         );

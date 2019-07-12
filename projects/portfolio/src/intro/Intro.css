@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap');
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    color: #1F262A; 
+}
+
+.intro-left span {
+    font-size: 2rem;
+    font-family: 'Petit Formal Script', cursive;
+}
+
+.intro-left_title {
+    font-size: 6rem;
+    padding: 2rem 0;
+}
+
+.intro-left_description {
+    padding: 2rem 0;
+    padding-right: 8rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.intro-left_paragraph {
+    padding: 2rem 0;
+    font-size: 2rem;
+}
+
+.intro-right_paragraph {
+    padding: 2rem 0;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .intro-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 1.5rem;
+    }
+
+    .intro-left_paragraph {
+        font-size: 1.5rem;
+    }
+    
+    .intro-right_paragraph {
+        font-size: 1.5rem;
+    }
+
+    .intro-left_description {
+        font-size: 1.5rem;
+    }
+
+}

@@ -14,8 +14,6 @@ class Projects extends Component {
                 <h1>Projects: </h1>
                 <div className="projects">
                     <ProjectsCard />
-                    {/* <ProjectsCard />
-                    <ProjectsCard /> */}
                 </div>
             </div>
          );

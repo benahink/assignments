@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Projects from './projects/Projects.js';
+import Navbar from './navbar/Navbar.js';
 import About from './about/About.js';
 import Work from './work/Work.js';
-import Home from './home/Home.js';
+import Intro from './intro/Intro.js';
+import Resume from './resume/Resume.js';
 
 import './App.css'
 
@@ -16,9 +17,10 @@ class App extends Component {
     render() { 
         return ( 
             <div className="app-container">
-                <Home />
-                <Projects />
+                <Navbar />
+                <Intro />
                 <Work />
+                <Resume />
                 <About />
             </div>
         );

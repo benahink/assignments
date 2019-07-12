@@ -3,8 +3,7 @@
 }
 
 .app-container {
-    border: lightblue 2px solid;
-    min-width: 1000px;
-    max-width: 1500px;
+    border: #1f4954 2px solid;
     height: auto;
+    padding: 4rem;
 }
