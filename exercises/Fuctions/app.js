@@ -19,8 +19,9 @@ function evenOrOdd(num) {
     } else {
         console.log('odd: ' + num)
     }
+    return num
 }
-console.log(evenOrOdd(3))
+console.log(evenOrOdd(4))
 
 // Q4
 function stringLength(str) {
@@ -54,6 +55,22 @@ function fibonacci(n){
 
 console.log(fibonacci(11))
 
+// Q6
 
-  
+function frequentLetter(str) {
+    let count = 0;
+    let letter = '';
+    let storedLetter = []
+    for (let i = 0; i < str.length; i++) {
+        if (str.charAt(i) === letter) {
+            count++;
+        }
+    }
+    return str;
+}
+
+console.log(frequentLetter("a bb ccc dddd fffff"))
+
+
+
 

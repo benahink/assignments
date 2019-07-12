@@ -22,7 +22,7 @@ function peopleWhoVoted(arr) {
         } else {
             return a
         }
-    },0)
+    }, 0)
 }
 
 console.log(peopleWhoVoted([

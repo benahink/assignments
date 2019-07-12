@@ -1,44 +1,48 @@
-<<<<<<< HEAD
-let stringOne = 'Hello world!'
-let stringTwo = 'Hello'
+
 let strArray = []
 
 // Q1
 function caps(str) {
  return  str.toUpperCase() + str.toLowerCase()
 }
-console.log(caps(stringTwo))
+console.log(caps('Hello'))
 
 // Q2
 function halfLength(num) {
     num = num.length / 2
-    return (Math.floor(num))
+    return Math.floor(num)
 }
-console.log(halfLength(stringOne))
+console.log(halfLength('Hello world!'))
 
 // Q3
 function sliceFunction(str) {
   return str.slice(0, str.length / 2)
 }
-console.log(sliceFunction(stringOne))
+console.log(sliceFunction('Hello world!'))
 
 // Q4
 function halfCaps(str) {
-  str = str.split(' ')
-  strArray.push(str)
-  for (let i = 0; i < strArray.length; i++) {
-    let wordsIndex =  strArray[i]
-    wordsIndex[0] = wordsIndex[0].toUpperCase()
-    wordsIndex[1] = wordsIndex[1].toLowerCase()
-    strArray[i] = wordsIndex.join(' ')
-  }
-  return strArray.join('')
+  return str.slice(0, str.length/2).toUpperCase() + str.slice(str.length/2)
 }
-console.log(halfCaps())
 
-=======
-// function caps(str) {
-//     return str.toUpperCase() + str.toLowerCase()
-// }
-// console.log(caps("Hello"))
->>>>>>> 031c77f32a87254985f2b382d886a2464e906e50
+console.log(halfCaps("put stuff here"))
+
+
+// optional
+function caps(str) {
+    const strArr = str.split(' ')
+    const newStrArr = []
+    for(let i = 0; i < strArr.length; i++) {
+      newStrArr.push(strArr[i].charAt(0).toUpperCase() + strArr[i].slice(1))
+    }
+    return newStrArr.join(' ')
+}
+console.log(caps("cap the letters that follow a space"))
+
+
+function capsMapped (str) {
+  return str.split(' ').map(el => el.charAt(0).toUpperCase() + el.slice(1)).join(' ')
+  // return str.split(' ').map(el => el[0].toUpperCase() + el.slice(1)).join(' ')
+}
+
+console.log(capsMapped('tried this with map method'))

@@ -24,6 +24,7 @@
 //     addSum3 = parseInt(input5) * parseInt(input6)
 //     document.getElementById('addResult3').innerText = `${addSum3}`
 // });
+
 let totalPrice = document.getElementById('submitButton')
 
 totalPrice.addEventListener('click', function(e) {
