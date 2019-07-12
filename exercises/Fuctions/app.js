@@ -32,3 +32,28 @@ function stringLength(str) {
   }
 }
 console.log(stringLength("I am a very long string that keeps going and going."))
+
+// Q5
+
+function fibonacci(n){
+    if (n <= 2) {
+        return 1
+    } else {
+        let a = 1 ;
+        let b = 0;
+
+        for(let i = 0; i <= n; i++) {
+            let result = a + b;
+            a = b;
+            b = result;
+            console.log(result)
+        }
+        return b;
+    }
+}
+
+console.log(fibonacci(11))
+
+
+  
+
