@@ -10,7 +10,7 @@ function myFunction() {
     const food = fruit.concat(vegetables)
     food.splice(4, 2)
     food.reverse()
-    const newStr = food.join(',')
+    const newStr = food.join(', ')
     return vegetables, fruit, food, newStr
 }
 
