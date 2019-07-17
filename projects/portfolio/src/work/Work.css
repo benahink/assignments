@@ -6,13 +6,13 @@
 
 .work-container {
     height: auto;
-    padding: 5%;
+    /* padding: 2em; */
 }
 
 
 .work-container h1 {
     font-family: 'Merriweather', serif;
-    font-size: 150px;
+    font-size: 3em;
     color: #1F262A; 
     position: relative;
     top: 40px;

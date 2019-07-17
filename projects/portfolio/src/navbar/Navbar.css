@@ -10,7 +10,7 @@
 
 
 .nav {
-    font-size: 2.5rem;
+    font-size: 0.5em;
     padding: 2rem;
     font-family: 'Raleway', sans-serif;
 }
@@ -24,7 +24,7 @@
 .nav-links {
     text-decoration: none;
     color: #1F262A;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 .nav-links:hover {
@@ -38,7 +38,7 @@
 
 .image {
     display: inline-block;
-    height: 50px;
+    height: 4.5em;
     position: absolute;
     right: 4em;
     border: 1px solid #1F262A;;
@@ -48,7 +48,8 @@
 
 .nav-toggle {
     cursor: pointer;
-    font-size: 40px;
+    font-size: 4em;
+    color: #1F262A;
 }
 
 .active {
@@ -82,7 +83,7 @@
     }
 } */
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .nav {
         display: flex; 
         justify-content: space-between;
@@ -93,5 +94,31 @@
         margin-right: 20px;
         font-size: 1.7rem;
     }
+} */
 
+@media screen and (min-width: 768px) {
+    .nav {
+        display: flex; 
+        justify-content: space-between;
+        height: 70px;
+        align-items: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .menu li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-right: 40px;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
 }

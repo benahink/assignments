@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './navbar/Navbar.js';
+import Home from './home/Home.js';
 import About from './about/About.js';
 import Work from './work/Work.js';
 import Intro from './intro/Intro.js';
@@ -18,9 +19,10 @@ class App extends Component {
         return ( 
             <div className="app-container">
                 <Navbar />
+                <Home />
                 <Intro />
-                <Work />
-                <Resume />
+                {/* <Work />
+                <Resume /> */}
                 <About />
             </div>
         );

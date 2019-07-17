@@ -8,61 +8,56 @@
 @import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap');
 
 .intro-container {
-    /* display: flex;
-    flex-direction: row; */
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 2rem;
-    height: auto;
-    padding: 1.5rem;
+    grid-gap: 0;
+    height: 70vh;
+    padding: 0.3em;
     font-family: 'Raleway', sans-serif;
     color: #1F262A; 
 }
 
 .intro-left span {
-    font-size: 2rem;
+    font-size: 1em;
     font-family: 'Petit Formal Script', cursive;
 }
 
 .intro-left_title {
-    font-size: 6rem;
-    padding: 2rem 0;
+    font-size: 3em;
 }
 
 .intro-left_description {
-    padding: 2rem 0;
-    padding-right: 8rem;
-    font-size: 2rem;
+    padding: 0.5em 0;
+    padding-right: 0.5em;
+    font-size: 1em;
     font-weight: bold;
 }
 
 .intro-left_paragraph {
-    font-size: 2rem;
+    font-size: 1em;
 }
 
 .intro-right_paragraph {
-    font-size: 2rem;
+    font-size: 1em;
 }
 
-/* @media screen and (max-width: 800px) {
-    
-} */
-
-@media screen and (max-width: 710px) {
+@media screen and (min-width: 768px) {
     .intro-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        padding: 2rem;
     }
     .intro-left_paragraph {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     
     .intro-right_paragraph {
-        padding-top: 13rem; 
-        font-size: 1.5rem;
+        padding-top: 4rem; 
+        font-size: 1rem;
     }
 
     .intro-left_description {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }

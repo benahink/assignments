@@ -1,51 +1,11 @@
 * {
     margin: 0;
-}
 
-.about-container {
-    height: auto;
-    padding: 5%;
 }
+    /* color: #1F262A;  */
+    /* background: #1f4954; */
 
-.about-container > h1 {
-    font-family: 'Merriweather', serif;
-    color: #1F262A; 
-    font-size: 150px;
-    top: 45px;
-}
 
-.about {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-    width: 100%;
-    color: #FAF9E6;
-    border: #1f4954 1px solid;
-}
-
-.contact-me {
-    width: 50%;
-    background: #1f4954;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-me h3 {
-    font-size: 45px;
-    padding: 70px;
-}
-
-.about-me {
-    font-size: 30px;
-    padding: 80px;
-}
-
-.my-photos {
-    width: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 
 
