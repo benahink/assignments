@@ -27,8 +27,8 @@ class Navbar extends Component {
                         <li><a href="" className="nav-links">Home</a></li>
                         <li><a href="" className="nav-links">Intro</a></li>
                         <li><a href="" className="nav-links">Skills</a></li>
-                        <li><a href="" className="nav-links">Background</a></li>
                         <li><a href="" className="nav-links">Projects</a></li>
+                        <li><a href="" className="nav-links">Resume</a></li>
                         <li><a href="" className="nav-links">About me</a></li>
                     </ul>
                 </nav>              

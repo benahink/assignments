@@ -4,7 +4,7 @@ import './Resume.css';
 const Resume = () => {
     return ( 
         <div className="resume-container">
-                <h1>Resume: </h1>
+                <h1>Resume</h1>
                 <div className="resume">
                     
                 </div>
