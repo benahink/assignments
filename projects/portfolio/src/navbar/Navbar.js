@@ -10,19 +10,16 @@ class Navbar extends Component {
         }
     }
 
-    // handleToggle = (prevState) => {
-    //     this.setState({active: !prevState.active})
-    // }
+    handleToggle = () => {
+        this.setState({active: !this.state.active})
+        console.log('fired')
+    }
 
     render() { 
-        let className = "toggle";
-        if(this.state.active) {
-            className += 'toggle-active'
-        }
         return ( 
             <>
                 <nav role="navigation" className="nav">
-                    <span className={className}>
+                    <span className='nav-toggle' onClick={this.handleToggle}>
                         <i className="fas fa-bars"></i>
                     </span>
                     <img src={logo} className="image "alt="BK"/>

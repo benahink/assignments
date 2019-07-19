@@ -11,8 +11,7 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0;
-    height: 70vh;
-    padding: 0.3em;
+    height: auto;
     font-family: 'Raleway', sans-serif;
     color: #1F262A; 
     padding: 2em;
@@ -28,18 +27,19 @@
 }
 
 .intro-left_description {
-    padding: 0.5em 0;
-    padding-right: 0.5em;
-    font-size: 1em;
+    padding: 1em 0;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
 .intro-left_paragraph {
-    font-size: 1em;
+    font-size: 1.5em;
+    padding: 0.5em 0;
 }
 
 .intro-right_paragraph {
-    font-size: 1em;
+    font-size: 1.5em;
+    padding: 0.5em 0;
 }
 
 @media screen and (min-width: 768px) {

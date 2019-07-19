@@ -24,7 +24,7 @@
 .nav-links {
     text-decoration: none;
     color: #1F262A;
-    font-size: 2em;
+    font-size: 3.5em;
 }
 
 .nav-links:hover {
@@ -38,15 +38,16 @@
 
 .image {
     display: inline-block;
-    height: 4.5em;
+    height: 3em;
     position: absolute;
-    right: 4em;
+    right: 3em;
     border: 1px solid #1F262A;;
-    padding: 5px;
+    /* padding: 5px; */
+    margin: 0 auto;
     color: #1F262A;
 }
 
-.toggle {
+.nav-toggle {
     cursor: pointer;
     font-size: 4em;
     color: #1F262A;
@@ -55,46 +56,6 @@
 .active {
     display: block;
 }
-
-/* @media screen and (min-width: 768px) {
-    .nav {
-        display: flex; 
-        justify-content: space-between;
-        height: 70px;
-        align-items: center;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    .menu li {
-        margin: 0;
-    }
-
-    .nav-links {
-        margin-right: 40px;
-    }
-
-    .nav-toggle {
-        display: none;
-    }
-} */
-
-/* @media screen and (max-width: 1024px) {
-    .nav {
-        display: flex; 
-        justify-content: space-between;
-        height: 70px;
-        align-items: center;
-    }
-    .nav-links {
-        margin-right: 20px;
-        font-size: 1.7rem;
-    }
-} */
 
 @media screen and (min-width: 768px) {
     .nav {

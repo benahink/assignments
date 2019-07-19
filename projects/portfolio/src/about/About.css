@@ -12,6 +12,25 @@
     padding: 2em;
 }
 
+.about-container h1 {
+    font-size: 3em;
+}
+
+.about-container h3 {
+    padding-top: 1em;
+}
+
+.contact-me {
+    font-size: 1.5em;
+}
+
+.about-line-through {
+    height: 2px;
+    background-color: black;
+    width: 50%;
+    margin: 1em 0;
+}
+
 
 
 
