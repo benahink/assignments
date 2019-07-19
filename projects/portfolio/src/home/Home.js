@@ -9,11 +9,15 @@ class Home extends Component {
     render() { 
         return ( 
             <div className="home">
-                {/* <h1 className="home-page-header">hello</h1> */}
                 <div className="home-page">
                     <h2>Benahin Kur</h2>
                     <br/>
                     <h3>Full Stack Developer</h3>
+                    <ul className="font-awesome-fa">
+                        <i class="fab fa-linkedin-in fa-2x"></i>
+                        <i class="fab fa-github fa-2x"></i>
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </ul>
                 </div>
             </div>
         );

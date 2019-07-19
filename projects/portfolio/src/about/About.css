@@ -4,7 +4,13 @@
 }
     /* color: #1F262A;  */
     /* background: #1f4954; */
+    @import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap');
 
+.about-container {
+    font-family: 'Raleway', sans-serif;
+    color: #1F262A; 
+    padding: 2em;
+}
 
 
 
