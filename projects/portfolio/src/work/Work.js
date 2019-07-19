@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Work.css';
-import WorkCard from "./WorkCard.js"
+import WorkCard from './WorkCard.js';
 
 class Work extends Component {
     constructor(props) {
@@ -10,7 +10,7 @@ class Work extends Component {
     render() { 
         return ( 
             <div className="work-container">
-                <h1>Work: </h1>
+                <h1>Skills </h1>
                 <div className="work">
                     <WorkCard />
                 </div>

@@ -2,33 +2,35 @@
     margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300|Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 .work-container {
-    height: auto;
-    /* padding: 2em; */
+    font-family: 'Raleway', sans-serif;
+    color: #1F262A; 
+    padding: 1.5rem 4rem;
+    border-top: 1px solid rgb(31, 38, 42, 0.3);
 }
-
 
 .work-container h1 {
-    font-family: 'Merriweather', serif;
     font-size: 3em;
-    color: #1F262A; 
-    position: relative;
-    top: 40px;
+    padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 760px) {
-    .projects {
-        display: flex;
-        flex-wrap: row;
-        justify-content: space-between;
-        height: auto;
-        width: 100%;
-    }
-
-   
+.work-card-container {
+    height: 100vh;
 }
+
+.section-one, .section-two, .section-three {
+    height: 33%;
+}
+
+.mySkills:nth-child(2n) {
+    background-color: rgb(127, 255, 212, 0.4);
+}
+
+
+
 
 
 
