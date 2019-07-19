@@ -38,19 +38,21 @@
 
 .image {
     display: inline-block;
-    height: 3em;
+    height: 3.5em;
     position: absolute;
     right: 3em;
     border: 1px solid #1F262A;;
-    /* padding: 5px; */
-    margin: 0 auto;
+    padding: 5px;
+    /* margin: 0 auto; */
     color: #1F262A;
+    margin-right: 10px;
 }
 
 .nav-toggle {
     cursor: pointer;
-    font-size: 4em;
+    font-size: 3rem;
     color: #1F262A;
+    margin-left: 10px;
 }
 
 .active {
@@ -77,6 +79,7 @@
 
     .nav-links {
         margin-right: 40px;
+        font-size: 1.8rem;
     }
 
     .nav-toggle {

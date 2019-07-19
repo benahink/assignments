@@ -9,7 +9,8 @@
 .about-container {
     font-family: 'Raleway', sans-serif;
     color: #1F262A; 
-    padding: 2em;
+    padding: 1.5rem 4rem;
+    border-top: 1px solid rgb(31, 38, 42, 0.3);
 }
 
 .about-container h1 {
@@ -26,11 +27,35 @@
 
 .about-line-through {
     height: 2px;
-    background-color: black;
+    background-color: #1F262A;
     width: 50%;
     margin: 1em 0;
 }
 
+.contact-me_image {
+    font-size: 1.5em;
+    padding-top: 1em;
+}
+
+
+@media screen and (min-width: 768px) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    .about-container h1 {
+        font-size: 5rem;
+    }
+
+    .about-container h3, .about-me {
+        font-size: 2rem;
+    }
+
+    .contact-me_image {
+        font-size: 2rem;
+    }
+}
 
 
 

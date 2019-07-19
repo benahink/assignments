@@ -10,11 +10,11 @@
 .intro-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 0;
+    /* grid-gap: 0; */
     height: auto;
     font-family: 'Raleway', sans-serif;
     color: #1F262A;
-    padding: 2em;
+    padding: 1.5rem 4rem;
 }
 
 .intro-left span {
@@ -46,8 +46,9 @@
     .intro-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
         grid-gap: 1rem;
-        padding: 2rem;
+        padding: 5rem;
     }
 
     .intro-left_title {
