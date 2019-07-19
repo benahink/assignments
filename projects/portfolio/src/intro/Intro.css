@@ -13,7 +13,7 @@
     grid-gap: 0;
     height: auto;
     font-family: 'Raleway', sans-serif;
-    color: #1F262A; 
+    color: #1F262A;
     padding: 2em;
 }
 
@@ -49,16 +49,21 @@
         grid-gap: 1rem;
         padding: 2rem;
     }
-    .intro-left_paragraph {
-        font-size: 1rem;
+
+    .intro-left_title {
+        font-size: 5em;
     }
-    
+
+    .intro-left_paragraph {
+        font-size: 2rem;
+    }
+
     .intro-right_paragraph {
-        padding-top: 4rem; 
-        font-size: 1rem;
+        padding-top: 7rem;
+        font-size: 2rem;
     }
 
     .intro-left_description {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }

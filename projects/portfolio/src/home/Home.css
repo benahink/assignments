@@ -11,7 +11,7 @@
 
 
 .home {
-    height: 90vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,22 +25,21 @@
 .home-page {
     padding-left: 1em;
     font-family: 'Raleway', sans-serif;
-    /* font-size: 3em; */
     text-align: center;
     font-weight: 300;
 }
 
 .home-page h2 {
-    text-shadow: 1px 1px black;
+    text-shadow: 4px 4px black;
     color: white;
-    font-size: 5em;
+    font-size: 6em;
     padding-bottom: .3em;
 }
 
 .home-page h3 {
-    text-shadow: 1px 1px black;
+    text-shadow: 4px 4px black;
     color: white;
-    font-size: 3em;
+    font-size: 3.5em;
     padding-bottom: .3em;
 }
 
@@ -55,4 +54,42 @@
     color: #ffffff;
     display: flex;
     justify-content: space-evenly;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .home {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .font-awesome-fa {
+        padding-right: 4em; 
+        font-size: 2em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home-page {
+        text-align: left;
+        padding: 5em;
+    }
+
+    .home-page h2 {
+        text-shadow: 6px 6px black;
+        font-size: 7em;
+    }
+
+    .home-page h3 {
+        text-shadow: 6px 6px black;
+        font-size: 5em;
+    }
+
+    .line-through {
+        height: 4px;
+        width: 100%;
+        margin-bottom: 2em;
+        text-shadow: 6px 6px black;
+    }
 }
