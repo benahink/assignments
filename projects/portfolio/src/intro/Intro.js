@@ -6,17 +6,15 @@ const Intro = () => {
         <div className="intro-container">
             <div className="intro-left">
                 <h1 className="intro-left_title">Intro</h1>
-                <h1 className="intro-left_description">An <span>overiew</span> of how I approach we application development</h1>
-                <p className="intro-left_paragraph">My style of web application develeopment is
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium explicabo fugit et. Placeat, consequatur sunt odit nemo fuga quaerat quas, magni consequuntur vitae quos illum in id corrupti, vero voluptatem?
-                </p>
+                <h1 className="intro-left_description">An <span>overiew</span> to becoming a web developer</h1>
+                <p className="intro-left_paragraph"></p>
             </div>
             <div className="intro-right">
                 <p className="intro-right_paragraph">
-                    Write about the countries I've lived in and why we chose to move to the US
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi, nesciunt odit deleniti vel modi incidunt culpa, dolore ducimus, est libero qui quo atque fugiat repellat provident veritatis aliquam impedit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, laboriosam dolore. Eveniet provident asperiores id nulla necessitatibus exercitationem obcaecati assumenda laboriosam! Officiis cupiditate eaque dolor doloremque! Facilis illum quos omnis!
-                    write about 
+                    I am a full-stack developer based in Salt Lake City, UT. My skills include front-end and back-end development. I love minimalistic design and enjoy building/creating apps that are practical, enjoyable and user friendly.
+                    <br/>
+                    <br/>
+                    As a full stack developer, I am constantly learning about Web App Development and Software Engineering through online courses, training, books and meet ups.
                 </p>
             </div>
         </div>

@@ -24,15 +24,30 @@
     height: 33%;
 }
 
-.my-projects:nth-child(2n) {
+.my-projects {
+    border-radius: 10px;
+}
+
+.my-projects:nth-child(even) {
     background-color: rgb(127, 255, 212, 0.4);
+}
+
+.solid-line_projects {
+    height: 2px;
+    background-color: black;
+    width: 50%;
 }
 
 @media screen and (min-width: 768px) {
     .projects-card-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-rows: none;
         grid-gap: 1rem;
+    }
+
+    .projects-title {
+        font-size: 9rem;
     }
 }

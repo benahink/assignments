@@ -12,8 +12,8 @@
     border-top: 1px solid rgb(31, 38, 42, 0.3);
 }
 
-.work-container h1 {
-    font-size: 3em;
+.work-container_title {
+    font-size: 5rem;
     padding-bottom: 2rem;
 }
 
@@ -25,10 +25,40 @@
     height: 33%;
 }
 
-.mySkills:nth-child(2n) {
-    background-color: rgb(127, 255, 212, 0.4);
+.mySkills {
+    border-radius: 10px;
 }
 
+.mySkills:first-child {
+    background-color: rgb(127, 255, 212, 0.2);
+    border-radius: 4px;
+}
+
+.solid-line_skills {
+    height: 2px;
+    background-color: black;
+    width: 50%;
+}
+
+.front-end_title {
+    font-size: 1.7rem;
+}
+
+.front-end_icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.6rem;
+    height: auto;
+    padding: 2rem 0;
+}
+
+.back-end_icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.6rem;
+    height: auto;
+    padding: 2rem 0;
+}
 
 @media screen and (min-width: 768px) {
     .work-card-container {
