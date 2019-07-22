@@ -18,8 +18,11 @@ class ProjectsCard extends Component {
                         </ul>
                     </div>
                     <div className="my-projects projects-two">
-                    <h2 className="projects_title"><a href="https://github.com/benahink/assignments/tree/master/projects/personal-react-api-project">Recipe App</a></h2>
-                    <label htmlFor="technologies" className="technologies">Technologies: </label>
+                        <h2 className="projects_title">
+                            <a href="https://github.com/benahink/assignments/tree/master/projects/personal-react-api-project">Recipe App</a>
+                        </h2>
+                        <label htmlFor="technologies" className="technologies">Technologies: </label>
+                        {/* <i class="fas fa-utensils fa-3x"></i> */}
                         <ul className="recipe-app">
                             <li>ReactJS</li>
                             <li>NodeJS</li>
@@ -30,14 +33,6 @@ class ProjectsCard extends Component {
                     </div>
                     <div className="my-projects projects-three">
                         <h2 className="projects_title"><a href="https://github.com/benahink/my-projects">More Porjects</a></h2>
-                        {/* <label htmlFor="technologies" className="technologies">Technologies: </label> */}
-                        {/* <ul className="more-app">
-                            <li>ReactJS</li>
-                            <li>NodeJS</li>
-                            <li>npm</li>
-                            <li>Socket.io</li>
-                            <li></li>
-                        </ul> */}
                     </div>
                 </div>
             </>

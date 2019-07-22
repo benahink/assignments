@@ -20,7 +20,7 @@ class About extends Component {
                             <a href="https://github.com/benahink">
                                 <i class="fab fa-github fa-2x"></i>
                             </a> 
-                            <a href="">
+                            <a href="https://twitter.com/BenahinK">
                                 <i class="fab fa-twitter fa-2x"></i>
                             </a>
                         </ul>

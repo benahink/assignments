@@ -20,7 +20,9 @@ class Home extends Component {
                         <a href="https://github.com/benahink">
                             <i class="fab fa-github fa-5x"></i>
                         </a>
-                        <i class="fab fa-twitter fa-5x"></i>
+                        <a href="https://twitter.com/BenahinK">
+                            <i class="fab fa-twitter fa-5x"></i>
+                        </a>
                     </ul>
                 </div>
             </div>

@@ -33,14 +33,10 @@
     background-color: rgb(127, 255, 212, 0.1);
 }
 
-.solid-line_projects {
-    height: 2px;
-    background-color: black;
-    width: 50%;
-}
 
 .projects_title {
     font-size: 2.5rem;
+    padding-bottom: 1rem;
 }
 
 .projects_title a {
@@ -52,6 +48,7 @@
 
 .projects_title a:hover {
    background-color: rgb(127, 255, 212, 0.6);
+   /* box-shadow: 5px 5px 2px #258E99; */
    border-radius: 7px;
 }
 
