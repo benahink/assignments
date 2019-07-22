@@ -16,19 +16,29 @@ class WorkCard extends Component {
                             <i className="fab fa-js fa-5x"></i>
                             <i className="fab fa-sass fa-5x"></i>
                             <i className="fab fa-npm fa-5x"></i>
-                            <i className="fab fa-bootstrap fa-5x"></i>
-                            <i className="fab fa-accessible-icon fa-5x"></i>
+                            <i class="fab fa-react fa-5x"></i>
+                            {/* <i class="fab fa-node fa-5x"></i> */}
+                            <i class="fab fa-github fa-5x"></i>
                         </ul>
                     </div>
                     <div className="mySkills section-two">
                         <h2 className="front-end_title">Back End</h2>
                         <ul className="back-end_icons">
                             <i className="fab fa-java fa-5x"></i>
+                            <i class="fab fa-node-js fa-5x"></i>
                         </ul>
                     </div>
                     <div className="mySkills section-three">
                         <h2 className="front-end_title">More Skills...</h2>
-                        <div></div>
+                        <ul className="more-skills">
+                            <li>MongoDB</li>
+                            <li>Responslive Deslign</li>
+                            <li>Bootstrap</li>
+                            <li>Chrome Developer Tools</li>
+                            <li>Testing Debugging</li>
+                            <li>WebPack</li>
+                            <li>Socket.IO</li>
+                        </ul>
                     </div>
                 </div>
             </>

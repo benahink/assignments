@@ -17,7 +17,7 @@
 }
 
 .projects-card-container {
-    height: 100vh;
+    height: 100%;
 }
 
 .projects-one, .projects-two, .projects-three {
@@ -25,17 +25,48 @@
 }
 
 .my-projects {
+    height: auto;
     border-radius: 10px;
 }
 
 .my-projects:nth-child(even) {
-    background-color: rgb(127, 255, 212, 0.4);
+    background-color: rgb(127, 255, 212, 0.1);
 }
 
 .solid-line_projects {
     height: 2px;
     background-color: black;
     width: 50%;
+}
+
+.projects_title {
+    font-size: 2.5rem;
+}
+
+.projects_title a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #1F262A;
+    cursor: pointer;
+}
+
+.projects_title a:hover {
+   background-color: rgb(127, 255, 212, 0.6);
+   border-radius: 7px;
+}
+
+.chat-app, .recipe-app, .more-app {
+    list-style-type: none;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.technologies {
+    font-size: 1.7rem;
+    padding: 5px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -45,9 +76,5 @@
         grid-template-rows: 1fr;
         grid-template-rows: none;
         grid-gap: 1rem;
-    }
-
-    .projects-title {
-        font-size: 9rem;
     }
 }
