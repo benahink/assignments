@@ -6,7 +6,7 @@ const Intro = () => {
         <div className="intro-container">
             <div className="intro-left">
                 <h1 className="intro-left_title">Intro</h1>
-                <h1 className="intro-left_description">An <span>overiew</span> to becoming a web developer</h1>
+                <h1 className="intro-left_description">"Intuitive <span>design</span> happens when current knowledge is the same as target knowledge."</h1> 
                 <p className="intro-left_paragraph"></p>
             </div>
             <div className="intro-right">
