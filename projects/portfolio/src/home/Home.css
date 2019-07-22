@@ -58,6 +58,14 @@
     cursor: pointer;
 }
 
+
+.font-awesome-fa i:hover {
+    color: rgb(127, 255, 212);
+}
+
+.font-awesome-fa i {
+    color: #ffffff;
+}
 @media screen and (min-width: 768px) {
     .home {
         display: flex;

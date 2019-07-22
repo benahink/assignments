@@ -14,9 +14,15 @@ class About extends Component {
                             <br/><br/> As a full stack developer, I am constantly learning about Web App Development and Software Engineering through online courses, training, books and meet ups.
                         </p> */}
                         <ul className="font-awesome-about">
-                            <i class="fab fa-linkedin-in fa-2x"></i>
-                            <i class="fab fa-github fa-2x"></i>
-                            <i class="fab fa-twitter fa-2x"></i>
+                            <a href="https://www.linkedin.com/in/benahin-kur-542634139/">
+                                <i class="fab fa-linkedin-in fa-2x"></i>
+                            </a>
+                            <a href="https://github.com/benahink">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a> 
+                            <a href="">
+                                <i class="fab fa-twitter fa-2x"></i>
+                            </a>
                         </ul>
                     </div>
                 </div>
