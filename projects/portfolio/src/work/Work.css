@@ -43,6 +43,7 @@
 
 .front-end_title {
     font-size: 1.7rem;
+    margin-bottom: 15px;
 }
 
 .front-end_icons{
@@ -82,7 +83,6 @@
         grid-template-rows: none;
         grid-gap: 1rem;
     }
-
 }
 
 
