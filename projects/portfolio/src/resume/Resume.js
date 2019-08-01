@@ -4,11 +4,11 @@ import './Resume.css';
 const Resume = () => {
     return ( 
         <div className="resume-container">
-                <h1>Resume</h1>
-                <div className="resume">
-                    
-                </div>
+            <h1 className="resume-container_title">Resume</h1>
+            <div className="resume">
+                
             </div>
+        </div>
      );
 }
  

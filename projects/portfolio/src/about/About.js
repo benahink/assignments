@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
+import image from "../image/magic-mouse.jpeg"
 import './About.css';
+
 
 class About extends Component {
     render() { 
         return ( 
-            <div className="about-container">
-                <h1>Contact me </h1>
-                <div className="about">
+            <div className="about-main">
+                <img src={image} alt="image" className="about-image"/>
+                <div className="about-content">
+                    <h1>Contact me</h1>
                     <div className="contact-me">
                         <h3>benahink@gmail.com</h3>
-                        {/* <p className="about-me">I am a full-stack developer based in Salt Lake City, UT. My skills include front-end and back-end development. 
-                            I love minimalistic design and enjoy building/creating apps that are practical, enjoyable and user friendly.
-                            <br/><br/> As a full stack developer, I am constantly learning about Web App Development and Software Engineering through online courses, training, books and meet ups.
-                        </p> */}
+                        <p className="about-me">Looking for new exciting opportunites. Hire me!</p>
                         <ul className="font-awesome-about">
                             <a href="https://www.linkedin.com/in/benahin-kur-542634139/">
                                 <i class="fab fa-linkedin-in fa-2x"></i>

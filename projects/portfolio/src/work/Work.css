@@ -13,7 +13,7 @@
 }
 
 .work-container_title {
-    font-size: 3rem;
+    font-size: 2.5em;
     padding-bottom: 2rem;
 }
 
@@ -23,7 +23,7 @@
 
 .section-one, .section-two, .section-three {
     height: 33%;
-}
+} 
 
 .mySkills {
     height: auto;

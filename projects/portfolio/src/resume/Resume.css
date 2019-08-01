@@ -9,4 +9,10 @@
     color: #1F262A; 
     padding: 1.5rem 4rem;
     border-top: 1px solid rgb(31, 38, 42, 0.3);
+    /* font-size: 2.5em; */
+}
+
+.resume-container_title {
+    font-size: 2.5em;
+    padding-bottom: 2rem;
 }

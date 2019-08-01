@@ -15,11 +15,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid #1F262A;
     background-image: url('../image/background-1.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    /* width: 100vw; */
 }
 
 .home-page {
@@ -32,14 +30,14 @@
 .home-page h2 {
     text-shadow: 4px 4px black;
     color: white;
-    font-size: 6em;
+    font-size: 4em;
     padding-bottom: .3em;
 }
 
 .home-page h3 {
     text-shadow: 4px 4px black;
     color: white;
-    font-size: 3.5em;
+    font-size: 2.5em;
     padding-bottom: .3em;
 }
 
@@ -54,7 +52,7 @@
     color: #ffffff;
     display: flex;
     justify-content: space-evenly;
-    font-size: 1.3em;
+    font-size: 0.8em;
     cursor: pointer;
 }
 
@@ -66,6 +64,7 @@
 .font-awesome-fa i {
     color: #ffffff;
 }
+
 @media screen and (min-width: 768px) {
     .home {
         display: flex;
@@ -86,12 +85,12 @@
 
     .home-page h2 {
         text-shadow: 6px 6px black;
-        font-size: 7em;
+        font-size: 5em;
     }
 
     .home-page h3 {
         text-shadow: 6px 6px black;
-        font-size: 5em;
+        font-size: 3em;
     }
 
     .line-through {

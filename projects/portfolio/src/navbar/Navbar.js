@@ -17,7 +17,7 @@ class Navbar extends Component {
 
     render() { 
         return ( 
-            <>
+            <div className="nav-container">
                 <nav role="navigation" className="nav">
                     <span className='nav-toggle' onClick={this.handleToggle}>
                         <i className="fas fa-bars"></i>
@@ -32,7 +32,7 @@ class Navbar extends Component {
                         <li><a href="" className="nav-links">About me</a></li>
                     </ul>
                 </nav>              
-            </>
+            </div>
         )
     }
 }

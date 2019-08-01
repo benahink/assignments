@@ -27,12 +27,11 @@ class ProjectsCard extends Component {
                             <li>ReactJS</li>
                             <li>NodeJS</li>
                             <li>npm</li>
-                            <li>Socket.io</li>
                             <li></li>
                         </ul>
                     </div>
                     <div className="my-projects projects-three">
-                        <h2 className="projects_title"><a href="https://github.com/benahink/my-projects">More Porjects</a></h2>
+                        <h2 className="projects_title"><a href="https://github.com/benahink/my-projects">More Porjects...</a></h2>
                     </div>
                 </div>
             </>
