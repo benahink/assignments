@@ -7,7 +7,7 @@
 .resume-container {
     font-family: 'Raleway', sans-serif;
     color: #1F262A; 
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 8rem;
     border-top: 1px solid rgb(31, 38, 42, 0.3);
     /* font-size: 2.5em; */
 }
@@ -15,4 +15,10 @@
 .resume-container_title {
     font-size: 2.5em;
     padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .resume-container {
+        padding: 1.5rem 10rem;
+    }
 }

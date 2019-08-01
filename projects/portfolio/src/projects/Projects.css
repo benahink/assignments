@@ -7,7 +7,7 @@
 .projects-container {
     font-family: 'Raleway', sans-serif;
     color: #1F262A; 
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 8rem;
     border-top: 1px solid rgb(31, 38, 42, 0.3);
 }
 
@@ -73,5 +73,9 @@
         grid-template-rows: 1fr;
         grid-template-rows: none;
         grid-gap: 1rem;
+    }
+
+    .projects-container {
+        padding: 1.5rem 10rem;
     }
 }
