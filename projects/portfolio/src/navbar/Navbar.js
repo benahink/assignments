@@ -12,10 +12,10 @@ class Navbar extends Component {
 
     handleToggle = () => {
         this.setState({active: !this.state.active})
-        console.log('fired')
     }
 
     render() { 
+        const menuDrop = this.state.active ? "none" : "menu";
         return ( 
             <div className="nav-container">
                 <nav role="navigation" className="nav">
@@ -23,14 +23,16 @@ class Navbar extends Component {
                         <i className="fas fa-bars"></i>
                     </span>
                     <img src={logo} className="image "alt="BK"/>
-                    <ul className="menu">
-                        <li><a href="" className="nav-links">Home</a></li>
-                        <li><a href="" className="nav-links">Intro</a></li>
-                        <li><a href="" className="nav-links">Skills</a></li>
-                        <li><a href="" className="nav-links">Projects</a></li>
-                        <li><a href="" className="nav-links">Resume</a></li>
-                        <li><a href="" className="nav-links">About me</a></li>
-                    </ul>
+                    <div className={menuDrop}>
+                        <ul className="nav-list">
+                            <li><a href="" className="nav-links">Home</a></li>
+                            <li><a href="" className="nav-links">Intro</a></li>
+                            <li><a href="" className="nav-links">Skills</a></li>
+                            <li><a href="" className="nav-links">Projects</a></li>
+                            <li><a href="" className="nav-links">Resume</a></li>
+                            <li><a href="" className="nav-links">About me</a></li>
+                        </ul>
+                    </div>
                 </nav>              
             </div>
         )

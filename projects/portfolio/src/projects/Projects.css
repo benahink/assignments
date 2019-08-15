@@ -2,6 +2,7 @@
     margin: 0;
 }
 
+/* rgb(127, 255, 212, 0.1) */
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 .projects-container {
@@ -30,7 +31,7 @@
 }
 
 .my-projects:nth-child(even) {
-    background-color: rgb(127, 255, 212, 0.1);
+    background-color: rgb(31, 38, 42, 0.1);
 }
 
 

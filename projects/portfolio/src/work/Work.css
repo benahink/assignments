@@ -31,7 +31,8 @@
 }
 
 .mySkills:nth-child(odd) {
-    background-color: rgb(127, 255, 212, 0.1);
+    /* background-color: rgb(127, 255, 212, 0.1); */
+    background-color: rgb(31, 38, 42, 0.1);
     border-radius: 4px;
 }
 

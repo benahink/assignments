@@ -28,8 +28,7 @@
 }
 
 .home-page h2 {
-    text-shadow: 4px 4px black;
-    color: white;
+    color: rgb(236, 229, 229);
     font-size: 4em;
     padding-bottom: .3em;
 }

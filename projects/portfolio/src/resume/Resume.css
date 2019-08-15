@@ -17,8 +17,19 @@
     padding-bottom: 2rem;
 }
 
+.resume {
+    background: rgb(31, 38, 42, 0.1);
+    height: 150px;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
 @media screen and (min-width: 768px) {
     .resume-container {
         padding: 1.5rem 10rem;
     }
+
+    /* .resume {} */
 }
