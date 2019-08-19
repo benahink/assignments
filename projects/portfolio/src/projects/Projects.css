@@ -31,9 +31,9 @@
 }
 
 .my-projects:nth-child(even) {
-    background-color: rgb(31, 38, 42, 0.1);
+    /* background-color: rgb(31, 38, 42, 0.1); */
+    background-color: rgb(124, 5, 242, 0.2);
 }
-
 
 .projects_title {
     font-size: 2.5rem;
@@ -48,7 +48,7 @@
 }
 
 .projects_title a:hover {
-   background-color: rgb(127, 255, 212, 0.6);
+   background-color: rgb(124, 5, 242);
    /* box-shadow: 5px 5px 2px #258E99; */
    border-radius: 7px;
 }

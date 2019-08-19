@@ -7,9 +7,14 @@
 
 .work-container {
     font-family: 'Raleway', sans-serif;
-    color: #1F262A; 
+    /* color: #1F262A;  */
+    color: rgb(245, 245, 245, 0.8);
     padding: 1.5rem 8rem;
-    border-top: 1px solid rgb(31, 38, 42, 0.3);
+    border-top: 1px solid #1f262a4d;
+    /* background: rgb(71, 3, 166, 0.9); */
+    background: rgb(9,1,38);
+background: linear-gradient(90deg, rgba(9,1,38,1) 13%, rgba(38,2,115,1) 64%, rgba(124,5,242,1) 100%);
+
 }
 
 .work-container_title {
@@ -19,6 +24,7 @@
 
 .work-card-container {
     height: 100%;
+    
 }
 
 .section-one, .section-two, .section-three {
@@ -30,11 +36,6 @@
     border-radius: 10px;
 }
 
-.mySkills:nth-child(odd) {
-    /* background-color: rgb(127, 255, 212, 0.1); */
-    background-color: rgb(31, 38, 42, 0.1);
-    border-radius: 4px;
-}
 
 .solid-line_skills {
     height: 2px;
